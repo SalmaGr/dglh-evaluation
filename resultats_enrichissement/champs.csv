@@ -1,0 +1,761 @@
+table,champ,propose,valide,decision
+bronze.art_02,detected_sector,industrie des boissons non alcoolisées / production de boissons gazeuses,industrie des boissons non alcoolisées / production de boissons gazeuses,accepted
+bronze.art_02,data_domain,catalogue produits boissons,catalogue produits boissons,accepted
+bronze.art_02,business_description,"Cette table contient le référentiel maître des produits de boissons, avec leurs caractéristiques commerciales et logistiques. Elle sert les équipes d'approvisionnement, de pricing et de gestion de catalogue pour assurer la cohérence des ventes et des achats.","Cette table contient le référentiel maître des produits de boissons, avec leurs caractéristiques commerciales et logistiques. Elle sert les équipes d'approvisionnement, de pricing et de gestion de catalogue pour assurer la cohérence des ventes et des achats.",accepted
+bronze.art_02,typical_consumers,"responsable approvisionnement, analyste ventes, chef de produit, gestionnaire de catalogue","responsable approvisionnement, analyste ventes, chef de produit, gestionnaire de catalogue",accepted
+bronze.art_02,confidentiality_level,Internal,Internal,accepted
+bronze.art_02,suggested_tags,condition_vente_l | condition_vente_u | fournisseur_f0041_f0046_f0047_f0048_f0049_f0051_f0052 | produit_boisson_gazeuse | taux_marge | type_vente_13_19 | unite_l | unite_u,condition_vente_l | condition_vente_u | fournisseur_f0041_f0046_f0047_f0048_f0049_f0051_f0052 | produit_boisson_gazeuse | taux_marge | type_vente_13_19 | unite_l | unite_u,accepted
+bronze.art_02,keywords,code ean | fournisseur | produits boissons | tarif d'achat | tarif de vente | unité litre,code ean | fournisseur | produits boissons | tarif d'achat | tarif de vente | unité litre,accepted
+bronze.art_02,column_description,Identifiant interne unique du produit dans le système ERP.,Identifiant interne unique du produit dans le système ERP.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Nom commercial du produit tel qu'il apparaît sur l'étiquette.,Nom commercial du produit tel qu'il apparaît sur l'étiquette.,accepted
+bronze.art_02,column_sensitivity,Public,Public,accepted
+bronze.art_02,column_description,Code-barres EAN à 13 chiffres utilisé pour l'identification globale du produit.,Code-barres EAN à 13 chiffres utilisé pour l'identification globale du produit.,accepted
+bronze.art_02,column_sensitivity,Public,Public,accepted
+bronze.art_02,column_description,"Prix d'achat du produit exprimé en euros, hors taxes.","Prix d'achat du produit exprimé en euros, hors taxes.",accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Prix de vente hors taxes du produit en euros.,Prix de vente hors taxes du produit en euros.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Prix de vente toutes taxes comprises du produit en euros.,Prix de vente toutes taxes comprises du produit en euros.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Taux de marge du produit exprimé en proportion décimale.,Taux de marge du produit exprimé en proportion décimale.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Code de type de vente (13 ou 19) indiquant la catégorie tarifaire.,Code de type de vente (13 ou 19) indiquant la catégorie tarifaire.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Identifiant du fournisseur associé au produit.,Identifiant du fournisseur associé au produit.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,"Unité de mesure du conditionnement du produit (L pour litre, U pour unité).","Unité de mesure du conditionnement du produit (L pour litre, U pour unité).",accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Chemin S3 du fichier source contenant les données du produit.,Chemin S3 du fichier source contenant les données du produit.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Date du fichier source au format AAAA-MM-JJ.,Date du fichier source au format AAAA-MM-JJ.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Horodatage d'ingestion du fichier en secondes depuis l'époque Unix.,Horodatage d'ingestion du fichier en secondes depuis l'époque Unix.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Mois de référence du jeu de données au format AAAA-MM.,Mois de référence du jeu de données au format AAAA-MM.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Condition de vente du produit (L ou U) indiquant le type de conditionnement.,Condition de vente du produit (L ou U) indiquant le type de conditionnement.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_02,column_description,Date de dernière mise à jour de l'enregistrement du produit.,Date de dernière mise à jour de l'enregistrement du produit.,accepted
+bronze.art_02,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,detected_sector,retail - grocery and household goods,retail - grocery and household goods,accepted
+bronze.art_divers,data_domain,catalogue produits,catalogue produits,accepted
+bronze.art_divers,business_description,"Cette table contient le catalogue maître des articles vendus en magasin, avec leurs caractéristiques, prix d'achat, prix de vente, marges, fournisseur et unité de conditionnement. Chaque ligne représente un article pour un mois donné, permettant de suivre l'évolution des tarifs et des marges. Elle sert aux équipes d'achat, de pricing et d'analyse de performance produit.","Cette table contient le catalogue maître des articles vendus en magasin, avec leurs caractéristiques, prix d'achat, prix de vente, marges, fournisseur et unité de conditionnement. Chaque ligne représente un article pour un mois donné, permettant de suivre l'évolution des tarifs et des marges. Elle sert aux équipes d'achat, de pricing et d'analyse de performance produit.",accepted
+bronze.art_divers,typical_consumers,"acheteur, responsable catégorie, analyste prix, gestionnaire stock","acheteur, responsable catégorie, analyste prix, gestionnaire stock",accepted
+bronze.art_divers,confidentiality_level,Internal,Internal,accepted
+bronze.art_divers,suggested_tags,conditionnement_kg | conditionnement_piece | fournisseur | marge_brute | prix_achat | prix_vente | produit_catalogue | suivi_prix,conditionnement_kg | conditionnement_piece | prix_achat | prix_vente | produit_catalogue | suivi_prix,edited
+bronze.art_divers,keywords,code ean | fournisseur | marge brute | prix d'achat | prix de vente | unité de mesure,code ean | fournisseur | marge brute | prix d'achat | prix de vente | unité de mesure,accepted
+bronze.art_divers,column_description,Identifiant unique de l'article dans le système ERP.,Identifiant unique de l'article dans le système ERP.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Libellé descriptif du produit, incluant marque, format et caractéristiques.","Libellé descriptif du produit, incluant marque, format et caractéristiques.",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Code-barres EAN13 du produit, utilisé pour l'identification commerciale.","Code-barres EAN13 du produit, utilisé pour l'identification commerciale.",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Prix d'achat unitaire du produit, exprimé en devise locale.","Prix d'achat unitaire du produit, exprimé en devise locale.",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Prix de vente unitaire du produit, hors taxes.","Prix de vente unitaire du produit, hors taxes.",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Prix de vente toutes taxes comprises du produit.,Prix de vente toutes taxes comprises du produit.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Marge brute proportionnelle entre le prix de vente TTC et le prix d'achat.,Marge brute proportionnelle entre le prix de vente TTC et le prix d'achat.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Valeur du taux de TVA appliqué (exemple 19, 7, 13).","Valeur du taux de TVA appliqué (exemple 19, 7, 13).",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Code fournisseur attribué à chaque partenaire commercial.,Code fournisseur attribué à chaque partenaire commercial.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Unité de mesure du produit (ex. PCE, KG, L, U, BTE).","Unité de mesure du produit (ex. PCE, KG, L, U, BTE).",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Chemin S3 du fichier source contenant les enregistrements.,Chemin S3 du fichier source contenant les enregistrements.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Date du fichier source (premier jour du mois).,Date du fichier source (premier jour du mois).,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Timestamp d'ingestion du fichier dans le lac de données (epoch).,Timestamp d'ingestion du fichier dans le lac de données (epoch).,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Mois de référence du jeu de données au format AAAA-MM.,Mois de référence du jeu de données au format AAAA-MM.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,"Conditionnement de vente du produit (ex. PCE, KG, L, U, BTE).","Conditionnement de vente du produit (ex. PCE, KG, L, U, BTE).",accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.art_divers,column_description,Date de dernière mise à jour du produit dans le système ERP.,Date de dernière mise à jour du produit dans le système ERP.,accepted
+bronze.art_divers,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,detected_sector,home appliance distribution,home appliance distribution,accepted
+bronze.articles_07,data_domain,product catalogue,product catalogue,accepted
+bronze.articles_07,business_description,"The table stores the master record of each home appliance item sold or distributed, identified by a unique internal ID and enriched with supplier, pricing and tax information. It supports pricing analysis, supplier management and inventory planning across the distribution network.","The table stores the master record of each home appliance item sold or distributed, identified by a unique internal ID and enriched with supplier, pricing and tax information. It supports pricing analysis, supplier management and inventory planning across the distribution network.",accepted
+bronze.articles_07,typical_consumers,"category manager, procurement analyst, sales planner, inventory controller","category manager, procurement analyst, sales planner, inventory controller",accepted
+bronze.articles_07,confidentiality_level,Internal,Internal,accepted
+bronze.articles_07,suggested_tags,catalogue_articles | code_ean | erp_ingestion | fournisseur_id | marge_percent | prix_achat | prix_vente | produits_electromenagers | taxe_valeur_ajoutee | unite_piece,erp_ingestion | fournisseur_id | marge_percent | prix_achat | prix_vente | produits_electromenagers | taxe_valeur_ajoutee | unite_piece,edited
+bronze.articles_07,keywords,catalogue articles | code ean | fournisseur | prix d'achat | prix de vente | produits électroménagers,catalogue articles | code ean | fournisseur | prix d'achat | prix de vente | produits électroménagers,accepted
+bronze.articles_07,column_description,Identifiant interne unique de chaque article dans le système ERP.,Identifiant interne unique de chaque article dans le système ERP.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,"Libellé complet du produit, incluant la marque, le type et l'unité.","Libellé complet du produit, incluant la marque, le type et l'unité.",accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,"Code-barres EAN13 du produit, utilisé pour l'identification commerciale.","Code-barres EAN13 du produit, utilisé pour l'identification commerciale.",accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Prix d'achat hors taxes du produit auprès du fournisseur.,Prix d'achat hors taxes du produit auprès du fournisseur.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Prix de vente hors taxes proposé aux revendeurs ou clients.,Prix de vente hors taxes proposé aux revendeurs ou clients.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,"Prix de vente toutes taxes comprises, affiché aux clients finaux.","Prix de vente toutes taxes comprises, affiché aux clients finaux.",accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Pourcentage de marge brute calculé sur le produit.,Pourcentage de marge brute calculé sur le produit.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Taux de TVA appliqué au produit (valeur fixe 19%).,Taux de TVA appliqué au produit (valeur fixe 19%).,accepted
+bronze.articles_07,column_sensitivity,Public,Public,accepted
+bronze.articles_07,column_description,Identifiant du fournisseur associé à l'article.,Identifiant du fournisseur associé à l'article.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,"Unité de mesure de vente du produit, généralement 'PCE' (pièce).","Unité de mesure de vente du produit, généralement 'PCE' (pièce).",accepted
+bronze.articles_07,column_sensitivity,Public,Public,accepted
+bronze.articles_07,column_description,Chemin S3 du fichier source contenant les données de l'article.,Chemin S3 du fichier source contenant les données de l'article.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Date du fichier source d'où provient la ligne d'article.,Date du fichier source d'où provient la ligne d'article.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Timestamp d'ingestion du fichier dans le lac de données (epoch).,Timestamp d'ingestion du fichier dans le lac de données (epoch).,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.articles_07,column_description,Mois de référence du fichier source (format AAAA-MM).,Mois de référence du fichier source (format AAAA-MM).,accepted
+bronze.articles_07,column_sensitivity,Public,Public,accepted
+bronze.articles_07,column_description,"Condition de vente ou conditionnement du produit, souvent 'PCE'.","Condition de vente ou conditionnement du produit, souvent 'PCE'.",accepted
+bronze.articles_07,column_sensitivity,Public,Public,accepted
+bronze.articles_07,column_description,Date de dernière mise à jour de l'enregistrement d'article.,Date de dernière mise à jour de l'enregistrement d'article.,accepted
+bronze.articles_07,column_sensitivity,Internal,Internal,accepted
+bronze.avis_emails,detected_sector,distribution de supermarché - service client,distribution de supermarché - service client,accepted
+bronze.avis_emails,data_domain,réclamations clients,réclamations clients,accepted
+bronze.avis_emails,business_description,"Cette table stocke les courriels bruts envoyés par les clients à l'adresse service.clients@enseigne.tn. Chaque ligne représente un email avec son identifiant, l'expéditeur, le sujet, la date, le corps du message et les éventuelles pièces jointes. Elle sert à alimenter les processus de traitement des réclamations, de suivi des remboursements et de gestion du programme de fidélité.","Cette table stocke les courriels bruts envoyés par les clients à l'adresse service.clients@enseigne.tn. Chaque ligne représente un email avec son identifiant, l'expéditeur, le sujet, la date, le corps du message et les éventuelles pièces jointes. Elle sert à alimenter les processus de traitement des réclamations, de suivi des remboursements et de gestion du programme de fidélité.",accepted
+bronze.avis_emails,typical_consumers,"responsable service client, analyste expérience client, gestionnaire réclamations, chef de produit retail","responsable service client, analyste expérience client, gestionnaire réclamations, chef de produit retail",accepted
+bronze.avis_emails,confidentiality_level,Restricted,Restricted,accepted
+bronze.avis_emails,suggested_tags,attachement_ticket | demande_facture | email_service_client | points_fidelite | produits_alimentaires | reclamation_client | remboursement | supermarche_tunisien | transaction_tnd,attachement_ticket | demande_facture | points_fidelite | produits_alimentaires | reclamation_client | supermarche_tunisien | transaction_tnd,edited
+bronze.avis_emails,keywords,carte fidélité | email service client | produit défectueux | remboursement | réclamation client | tnd,carte fidélité | email service client | produit défectueux | remboursement | réclamation client | tnd,accepted
+bronze.avis_emails,column_description,"Contient le texte JSON de l'email : identifiant client, adresse e‑mail de l'expéditeur, destinataire, objet, date, corps du message et liste des pièces jointes.","Contient le texte JSON de l'email : identifiant client, adresse e‑mail de l'expéditeur, destinataire, objet, date, corps du message et liste des pièces jointes.",accepted
+bronze.avis_emails,column_sensitivity,Restricted,Restricted,accepted
+bronze.avis_emails,column_description,Chemin S3 du fichier source contenant le lot d'emails ingéré.,Chemin S3 du fichier source contenant le lot d'emails ingéré.,accepted
+bronze.avis_emails,column_sensitivity,Internal,Internal,accepted
+bronze.avis_emails,column_description,Date du fichier source (colonne vide dans l'échantillon).,Date du fichier source (colonne vide dans l'échantillon).,accepted
+bronze.avis_emails,column_sensitivity,Internal,Internal,accepted
+bronze.avis_emails,column_description,Horodatage d'ingestion du fichier (timestamp Unix en millisecondes).,Horodatage d'ingestion du fichier (timestamp Unix en millisecondes).,accepted
+bronze.avis_emails,column_sensitivity,Internal,Internal,accepted
+bronze.avis_emails,column_description,"Mois de référence du lot d'emails (ex. 2025-02, 2025-03).","Mois de référence du lot d'emails (ex. 2025-02, 2025-03).",accepted
+bronze.avis_emails,column_sensitivity,Internal,Internal,accepted
+bronze.avis_reseaux_sociaux,detected_sector,retail - supermarché,retail - supermarché,accepted
+bronze.avis_reseaux_sociaux,data_domain,avis clients réseaux sociaux,avis clients réseaux sociaux,accepted
+bronze.avis_reseaux_sociaux,business_description,"Cette table regroupe les avis publiés sur les réseaux sociaux concernant les magasins d’une chaîne de supermarchés en Tunisie. Chaque ligne représente un post unique avec ses métadonnées (plateforme, auteur, date, localisation, magasin) et le texte du commentaire. Elle sert à analyser le sentiment client et à détecter les problèmes de service ou de produit.","Cette table regroupe les avis publiés sur les réseaux sociaux concernant les magasins d’une chaîne de supermarchés en Tunisie. Chaque ligne représente un post unique avec ses métadonnées (plateforme, auteur, date, localisation, magasin) et le texte du commentaire. Elle sert à analyser le sentiment client et à détecter les problèmes de service ou de produit.",accepted
+bronze.avis_reseaux_sociaux,typical_consumers,"responsable expérience client, analyste marketing, manager de magasin, chef de produit","responsable expérience client, analyste marketing, manager de magasin, chef de produit",accepted
+bronze.avis_reseaux_sociaux,confidentiality_level,Confidential,Confidential,accepted
+bronze.avis_reseaux_sociaux,suggested_tags,analyse_sentiment | avis_clients | commentaire_produit | langue_fr | plateforme_facebook | plateforme_instagram | plateforme_tiktok | supermarche_tunisie,analyse_sentiment | avis_clients | langue_fr | plateforme_facebook | plateforme_instagram | plateforme_tiktok | supermarche_tunisie,edited
+bronze.avis_reseaux_sociaux,keywords,avis client | commentaire produit | réseaux sociaux | sentiment magasin | tunisie,avis client | commentaire produit | réseaux sociaux | sentiment magasin | tunisie,accepted
+bronze.avis_reseaux_sociaux,column_description,"Contenu JSON du post de réseau social contenant l’identifiant du post, la plateforme, l’auteur, la date, le lieu, le magasin référencé, le texte du commentaire, le nombre de likes et la langue.","Contenu JSON du post de réseau social contenant l’identifiant du post, la plateforme, l’auteur, la date, le lieu, le magasin référencé, le texte du commentaire, le nombre de likes et la langue.",accepted
+bronze.avis_reseaux_sociaux,column_sensitivity,Confidential,Confidential,accepted
+bronze.avis_reseaux_sociaux,column_description,Chemin S3 du fichier source contenant les avis bruts.,Chemin S3 du fichier source contenant les avis bruts.,accepted
+bronze.avis_reseaux_sociaux,column_sensitivity,Internal,Internal,accepted
+bronze.avis_reseaux_sociaux,column_description,Date du fichier source (format AAAA‑MM‑JJ).,Date du fichier source (format AAAA‑MM‑JJ).,accepted
+bronze.avis_reseaux_sociaux,column_sensitivity,Internal,Internal,accepted
+bronze.avis_reseaux_sociaux,column_description,Horodatage d’ingestion du fichier (timestamp epoch en millisecondes).,Horodatage d’ingestion du fichier (timestamp epoch en millisecondes).,accepted
+bronze.avis_reseaux_sociaux,column_sensitivity,Internal,Internal,accepted
+bronze.avis_reseaux_sociaux,column_description,Mois de référence des données au format AAAA‑MM.,Mois de référence des données au format AAAA‑MM.,accepted
+bronze.avis_reseaux_sociaux,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,detected_sector,distribution de fournitures scolaires,distribution de fournitures scolaires,accepted
+bronze.catalogue_05,data_domain,produits scolaires,produits scolaires,accepted
+bronze.catalogue_05,business_description,"Cette table recense le catalogue des articles de fournitures scolaires gérés par l'ERP. Chaque ligne représente un produit unique avec ses caractéristiques commerciales (description, prix, fournisseur, unité). Elle sert aux équipes d'achat, de pricing et de gestion de stock pour alimenter les ventes et les réapprovisionnements.","Cette table recense le catalogue des articles de fournitures scolaires gérés par l'ERP. Chaque ligne représente un produit unique avec ses caractéristiques commerciales (description, prix, fournisseur, unité). Elle sert aux équipes d'achat, de pricing et de gestion de stock pour alimenter les ventes et les réapprovisionnements.",accepted
+bronze.catalogue_05,typical_consumers,"acheteur, responsable approvisionnement, analyste ventes, gestionnaire de catalogue","acheteur, responsable approvisionnement, analyste ventes, gestionnaire de catalogue",accepted
+bronze.catalogue_05,confidentiality_level,Internal,Internal,accepted
+bronze.catalogue_05,suggested_tags,catalogue_05 | fournisseur_f0087 | fournisseur_f0089 | prix_achat | prix_vente_ht | prix_vente_ttc | produits_scolaires | type_vente_13 | type_vente_19 | unite_pce,catalogue_05 | fournisseur_f0087 | fournisseur_f0089 | prix_achat | prix_vente_ht | prix_vente_ttc | produits_scolaires | type_vente_13 | type_vente_19 | unite_pce,accepted
+bronze.catalogue_05,keywords,catalogue produit | code barre | fournitures scolaires | prix d'achat | prix de vente | référence fournisseur,catalogue produit | code barre | fournitures scolaires | prix d'achat | prix de vente | référence fournisseur,accepted
+bronze.catalogue_05,column_description,Identifiant interne unique du produit dans le catalogue.,Identifiant interne unique du produit dans le catalogue.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,"Libellé descriptif du produit (ex. stylo, cahier, gomme).","Libellé descriptif du produit (ex. stylo, cahier, gomme).",accepted
+bronze.catalogue_05,column_sensitivity,Public,Public,accepted
+bronze.catalogue_05,column_description,Code-barres du produit (EAN 13).,Code-barres du produit (EAN 13).,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Prix d'achat du produit hors taxes.,Prix d'achat du produit hors taxes.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Prix de vente hors taxes affiché aux clients.,Prix de vente hors taxes affiché aux clients.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Prix de vente toutes taxes comprises.,Prix de vente toutes taxes comprises.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Taux de marge appliqué au produit.,Taux de marge appliqué au produit.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Code du type de vente (ex. 19 ou 13).,Code du type de vente (ex. 19 ou 13).,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Identifiant du fournisseur associé au produit.,Identifiant du fournisseur associé au produit.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,"Unité de mesure du produit, généralement ""PCE"" (pièce).","Unité de mesure du produit, généralement ""PCE"" (pièce).",accepted
+bronze.catalogue_05,column_sensitivity,Public,Public,accepted
+bronze.catalogue_05,column_description,Chemin S3 du fichier source contenant le lot de données.,Chemin S3 du fichier source contenant le lot de données.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Date du fichier source (premier jour du mois).,Date du fichier source (premier jour du mois).,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Timestamp d'ingestion du fichier dans le lac de données (epoch).,Timestamp d'ingestion du fichier dans le lac de données (epoch).,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,Mois de référence du fichier (format AAAA-MM).,Mois de référence du fichier (format AAAA-MM).,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.catalogue_05,column_description,"Condition de vente ou unité de conditionnement, souvent ""PCE"".","Condition de vente ou unité de conditionnement, souvent ""PCE"".",accepted
+bronze.catalogue_05,column_sensitivity,Public,Public,accepted
+bronze.catalogue_05,column_description,Date de la dernière mise à jour du produit dans le catalogue.,Date de la dernière mise à jour du produit dans le catalogue.,accepted
+bronze.catalogue_05,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,detected_sector,banque de détail - gestion de la relation client,banque de détail - gestion de la relation client,accepted
+bronze.clients_crm,data_domain,profil client bancaire,profil client bancaire,accepted
+bronze.clients_crm,business_description,"Cette table contient le référentiel maître des clients individuels d’une banque de détail. Chaque ligne représente un client unique avec ses informations d’identification, coordonnées, adresse et dates de création/mise à jour. Elle sert aux processus de KYC, de communication, de segmentation et de suivi des interactions client.","Cette table contient le référentiel maître des clients individuels d’une banque de détail. Chaque ligne représente un client unique avec ses informations d’identification, coordonnées, adresse et dates de création/mise à jour. Elle sert aux processus de KYC, de communication, de segmentation et de suivi des interactions client.",accepted
+bronze.clients_crm,typical_consumers,"analyste KYC, chargé de clientèle, responsable marketing, data scientist, chef de produit","analyste KYC, chargé de clientèle, responsable marketing, data scientist, chef de produit",accepted
+bronze.clients_crm,confidentiality_level,Restricted,Restricted,accepted
+bronze.clients_crm,suggested_tags,adresse_residentielle | client_bancaire | gouvernorat_tunis | identite_nationale | processus_communication | segment_kyc | sexe_f | sexe_m,adresse_residentielle | gouvernorat_tunis | identite_nationale | processus_communication | segment_kyc | sexe_f | sexe_m,edited
+bronze.clients_crm,keywords,adresse postale | client bancaire | kyc | numéro d'identité nationale | profil client | téléphone tunisien,adresse postale | client bancaire | kyc | numéro d'identité nationale | profil client | téléphone tunisien,accepted
+bronze.clients_crm,column_description,Identifiant unique du client dans le système CRM.,Identifiant unique du client dans le système CRM.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Nom de famille du client.,Nom de famille du client.,accepted
+bronze.clients_crm,column_sensitivity,Confidential,Confidential,accepted
+bronze.clients_crm,column_description,Prénom du client.,Prénom du client.,accepted
+bronze.clients_crm,column_sensitivity,Confidential,Confidential,accepted
+bronze.clients_crm,column_description,"Date de naissance du client, utilisée pour la vérification d’âge et la conformité KYC.","Date de naissance du client, utilisée pour la vérification d’âge et la conformité KYC.",accepted
+bronze.clients_crm,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_crm,column_description,"Sexe du client, indiqué par 'F' ou 'M'.","Sexe du client, indiqué par 'F' ou 'M'.",accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,"Numéro de téléphone mobile du client, préfixé par le code pays +216.","Numéro de téléphone mobile du client, préfixé par le code pays +216.",accepted
+bronze.clients_crm,column_sensitivity,Confidential,Confidential,accepted
+bronze.clients_crm,column_description,Adresse électronique du client.,Adresse électronique du client.,accepted
+bronze.clients_crm,column_sensitivity,Confidential,Confidential,accepted
+bronze.clients_crm,column_description,"Adresse postale complète du client (rue, numéro, etc.).","Adresse postale complète du client (rue, numéro, etc.).",accepted
+bronze.clients_crm,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_crm,column_description,Ville de résidence du client.,Ville de résidence du client.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Code postal associé à l’adresse du client.,Code postal associé à l’adresse du client.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Gouvernorat (région administrative) du client.,Gouvernorat (région administrative) du client.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Numéro de la carte d’identité nationale du client.,Numéro de la carte d’identité nationale du client.,accepted
+bronze.clients_crm,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_crm,column_description,Date de création du enregistrement client dans le CRM.,Date de création du enregistrement client dans le CRM.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Date de dernière mise à jour du enregistrement client.,Date de dernière mise à jour du enregistrement client.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Chemin du fichier source contenant les données du client.,Chemin du fichier source contenant les données du client.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Date du fichier source.,Date du fichier source.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Horodatage d’ingestion du fichier dans le lac de données (timestamp Unix).,Horodatage d’ingestion du fichier dans le lac de données (timestamp Unix).,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_crm,column_description,Mois d’ingestion au format AAAA-MM.,Mois d’ingestion au format AAAA-MM.,accepted
+bronze.clients_crm,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,detected_sector,retail - grocery loyalty,retail - grocery loyalty,accepted
+bronze.clients_fidelite,data_domain,adhérents programme fidélité,adhérents programme fidélité,accepted
+bronze.clients_fidelite,business_description,"Cette table répertorie les adhérents du programme de fidélité des magasins, chaque ligne représentant un client unique avec son niveau, ses points et le magasin d'inscription. Elle sert à suivre l'engagement client, à segmenter les membres par niveau et à alimenter les campagnes marketing ciblées.","Cette table répertorie les adhérents du programme de fidélité des magasins, chaque ligne représentant un client unique avec son niveau, ses points et le magasin d'inscription. Elle sert à suivre l'engagement client, à segmenter les membres par niveau et à alimenter les campagnes marketing ciblées.",accepted
+bronze.clients_fidelite,typical_consumers,"responsable marketing, analyste fidélité, chef de produit retail","responsable marketing, analyste fidélité, chef de produit retail",accepted
+bronze.clients_fidelite,confidentiality_level,Restricted,Restricted,accepted
+bronze.clients_fidelite,suggested_tags,client_fidelite | ingestion_timestamp | magasin_retail | niveau_argent | niveau_or | niveau_std | programme_points | source_fichier_s3,client_fidelite | ingestion_timestamp | magasin_retail | niveau_or | niveau_std | source_fichier_s3,edited
+bronze.clients_fidelite,keywords,client retail | fidélité | magasin | niveau argent | programme points,client retail | fidélité | magasin | niveau argent | programme points,accepted
+bronze.clients_fidelite,column_description,Code alphanumérique attribué à chaque adhérent du programme de fidélité,Code alphanumérique attribué à chaque adhérent du programme de fidélité,accepted
+bronze.clients_fidelite,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_fidelite,column_description,Nom et prénom du client,Nom et prénom du client,accepted
+bronze.clients_fidelite,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_fidelite,column_description,"Numéro de téléphone mobile du client, format international","Numéro de téléphone mobile du client, format international",accepted
+bronze.clients_fidelite,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_fidelite,column_description,"Niveau d'adhésion du client (ARGENT, OR, STD)","Niveau d'adhésion du client (ARGENT, OR, STD)",accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Nombre de points de fidélité accumulés par le client,Nombre de points de fidélité accumulés par le client,accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Date à laquelle le client a rejoint le programme de fidélité,Date à laquelle le client a rejoint le programme de fidélité,accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Identifiant du magasin où le client s'est inscrit,Identifiant du magasin où le client s'est inscrit,accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Chemin S3 du fichier brut contenant les enregistrements,Chemin S3 du fichier brut contenant les enregistrements,accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Date de création du fichier source,Date de création du fichier source,accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Horodatage d'ingestion du fichier dans le lac de données (millisecondes depuis epoch),Horodatage d'ingestion du fichier dans le lac de données (millisecondes depuis epoch),accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_fidelite,column_description,Mois (année-mois) associé aux données ingérées,Mois (année-mois) associé aux données ingérées,accepted
+bronze.clients_fidelite,column_sensitivity,Internal,Internal,accepted
+bronze.clients_web,detected_sector,e‑commerce retail - online consumer marketplace,e‑commerce retail - online consumer marketplace,accepted
+bronze.clients_web,data_domain,profils clients e‑commerce,profils clients e‑commerce,accepted
+bronze.clients_web,business_description,"Cette table stocke les profils détaillés des clients d’une plateforme de commerce en ligne, chaque ligne représentant un compte client unique avec ses coordonnées, adresse et préférences. Elle sert à alimenter les analyses de marketing, la segmentation clientèle et la gestion du consentement aux communications. Les données sont ingérées quotidiennement depuis des fichiers JSON stockés dans un bucket S3.","Cette table stocke les profils détaillés des clients d’une plateforme de commerce en ligne, chaque ligne représentant un compte client unique avec ses coordonnées, adresse et préférences. Elle sert à alimenter les analyses de marketing, la segmentation clientèle et la gestion du consentement aux communications. Les données sont ingérées quotidiennement depuis des fichiers JSON stockés dans un bucket S3.",accepted
+bronze.clients_web,typical_consumers,"analyste marketing, responsable CRM, data scientist, chef de produit e‑commerce","analyste marketing, responsable CRM, data scientist, chef de produit e‑commerce",accepted
+bronze.clients_web,confidentiality_level,Restricted,Restricted,accepted
+bronze.clients_web,suggested_tags,client_ecommerce | consent_news_false | consent_news_true | device_android | device_ios | device_web | gouvernorat_tunis | source_s3_raw,client_ecommerce | consent_news_false | consent_news_true | device_android | device_ios | device_web | gouvernorat_tunis | source_s3_raw,accepted
+bronze.clients_web,keywords,adresse livraison tunisie | clients e‑commerce | consentement newsletter | device mobile | profil utilisateur,adresse livraison tunisie | clients e‑commerce | consentement newsletter | device mobile | profil utilisateur,accepted
+bronze.clients_web,column_description,"Contient le profil complet du client au format JSON, incluant identifiant, coordonnées, adresse, date de création, consentement et type d’appareil","Contient le profil complet du client au format JSON, incluant identifiant, coordonnées, adresse, date de création, consentement et type d’appareil",accepted
+bronze.clients_web,column_sensitivity,Restricted,Restricted,accepted
+bronze.clients_web,column_description,Chemin du fichier source contenant les enregistrements JSON,Chemin du fichier source contenant les enregistrements JSON,accepted
+bronze.clients_web,column_sensitivity,Internal,Internal,accepted
+bronze.clients_web,column_description,Date de création du fichier source,Date de création du fichier source,accepted
+bronze.clients_web,column_sensitivity,Internal,Internal,accepted
+bronze.clients_web,column_description,Horodatage de l’ingestion du fichier dans le lac de données,Horodatage de l’ingestion du fichier dans le lac de données,accepted
+bronze.clients_web,column_sensitivity,Internal,Internal,accepted
+bronze.clients_web,column_description,Mois d’ingestion du fichier,Mois d’ingestion du fichier,accepted
+bronze.clients_web,column_sensitivity,Internal,Internal,accepted
+bronze.ecommerce_clickstream,detected_sector,commerce électronique - vente au détail,commerce électronique - vente au détail,accepted
+bronze.ecommerce_clickstream,data_domain,événements de clickstream,événements de clickstream,accepted
+bronze.ecommerce_clickstream,business_description,"Cette table enregistre chaque interaction utilisateur sur le site e‑commerce, au niveau de l'événement (page view, ajout au panier, etc.) avec le timestamp, l'identifiant de session et les métadonnées du navigateur. Elle sert à analyser le parcours client, mesurer les conversions et optimiser l'expérience d'achat.","Cette table enregistre chaque interaction utilisateur sur le site e‑commerce, au niveau de l'événement (page view, ajout au panier, etc.) avec le timestamp, l'identifiant de session et les métadonnées du navigateur. Elle sert à analyser le parcours client, mesurer les conversions et optimiser l'expérience d'achat.",accepted
+bronze.ecommerce_clickstream,typical_consumers,"analyste marketing, data scientist, responsable produit","analyste marketing, data scientist, responsable produit",accepted
+bronze.ecommerce_clickstream,confidentiality_level,Restricted,Restricted,accepted
+bronze.ecommerce_clickstream,suggested_tags,ecommerce_clickstream | evenement_add_to_cart | evenement_begin_checkout | evenement_page_view | evenement_view_item | evenement_wishlist_add | evenements_navigation | partition_mois | processus_achat | source_s3_raw,ecommerce_clickstream | evenement_add_to_cart | evenement_begin_checkout | evenement_page_view | evenement_view_item | evenement_wishlist_add | evenements_navigation | partition_mois | processus_achat | source_s3_raw,accepted
+bronze.ecommerce_clickstream,keywords,analyse conversion | journal navigation | parcours client | session utilisateur | événements clic,analyse conversion | journal navigation | parcours client | session utilisateur | événements clic,accepted
+bronze.ecommerce_clickstream,column_description,"Contient le JSON brut de chaque événement de navigation, incluant horodatage, identifiant de session, type d'événement, page, produit, adresse IP et identifiant d'utilisateur lorsqu'il est disponible.","Contient le JSON brut de chaque événement de navigation, incluant horodatage, identifiant de session, type d'événement, page, produit, adresse IP et identifiant d'utilisateur lorsqu'il est disponible.",accepted
+bronze.ecommerce_clickstream,column_sensitivity,Restricted,Restricted,accepted
+bronze.ecommerce_clickstream,column_description,Chemin S3 du fichier source contenant le lot d'événements.,Chemin S3 du fichier source contenant le lot d'événements.,accepted
+bronze.ecommerce_clickstream,column_sensitivity,Internal,Internal,accepted
+bronze.ecommerce_clickstream,column_description,Date du fichier source au format AAAA‑MM‑JJ.,Date du fichier source au format AAAA‑MM‑JJ.,accepted
+bronze.ecommerce_clickstream,column_sensitivity,Internal,Internal,accepted
+bronze.ecommerce_clickstream,column_description,Timestamp d'ingestion du lot d'événements exprimé en millisecondes depuis l'époque Unix.,Timestamp d'ingestion du lot d'événements exprimé en millisecondes depuis l'époque Unix.,accepted
+bronze.ecommerce_clickstream,column_sensitivity,Internal,Internal,accepted
+bronze.ecommerce_clickstream,column_description,Mois de partition du fichier source au format AAAA‑MM.,Mois de partition du fichier source au format AAAA‑MM.,accepted
+bronze.ecommerce_clickstream,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,detected_sector,industrie agroalimentaire - fournisseurs,industrie agroalimentaire - fournisseurs,accepted
+bronze.fournisseurs_fiches,data_domain,fiches fournisseurs,fiches fournisseurs,accepted
+bronze.fournisseurs_fiches,business_description,"Cette table répertorie les fiches des fournisseurs avec leurs coordonnées, identifiants fiscaux et bancaires ainsi que le délai de livraison prévu. Elle sert les équipes d'achats et de gestion des approvisionnements pour le suivi des relations fournisseurs et la planification des livraisons.","Cette table répertorie les fiches des fournisseurs avec leurs coordonnées, identifiants fiscaux et bancaires ainsi que le délai de livraison prévu. Elle sert les équipes d'achats et de gestion des approvisionnements pour le suivi des relations fournisseurs et la planification des livraisons.",accepted
+bronze.fournisseurs_fiches,typical_consumers,"acheteurs, responsables approvisionnement, analystes achats, gestionnaires de contrats, contrôleurs financiers","acheteurs, responsables approvisionnement, analystes achats, gestionnaires de contrats, contrôleurs financiers",accepted
+bronze.fournisseurs_fiches,confidentiality_level,Restricted,Restricted,accepted
+bronze.fournisseurs_fiches,suggested_tags,email_contact | fournisseur_agroalimentaire | industrie_electromenager | industrie_laitiere | process_approvisionnement | rib_banque | ville_fournisseur,email_contact | fournisseur_agroalimentaire | industrie_electromenager | industrie_laitiere | process_approvisionnement | rib_banque,edited
+bronze.fournisseurs_fiches,keywords,contact fournisseur | délais livraison | email fournisseur | fournisseur | rib fournisseur | ville fournisseur,contact fournisseur | délais livraison | email fournisseur | fournisseur | rib fournisseur | ville fournisseur,accepted
+bronze.fournisseurs_fiches,column_description,Identifiant unique du fournisseur dans le système interne,Identifiant unique du fournisseur dans le système interne,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,"Raison sociale du fournisseur, nom commercial complet","Raison sociale du fournisseur, nom commercial complet",accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Numéro de matricule fiscal ou registre de commerce du fournisseur,Numéro de matricule fiscal ou registre de commerce du fournisseur,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Numéro de compte bancaire du fournisseur (RIB),Numéro de compte bancaire du fournisseur (RIB),accepted
+bronze.fournisseurs_fiches,column_sensitivity,Restricted,Restricted,accepted
+bronze.fournisseurs_fiches,column_description,Numéro de téléphone de contact du fournisseur,Numéro de téléphone de contact du fournisseur,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Adresse e‑mail de contact du fournisseur,Adresse e‑mail de contact du fournisseur,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Ville où le fournisseur est domicilié,Ville où le fournisseur est domicilié,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Public,Public,accepted
+bronze.fournisseurs_fiches,column_description,Délai de livraison prévu en jours pour le fournisseur,Délai de livraison prévu en jours pour le fournisseur,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Chemin du fichier source contenant la fiche du fournisseur,Chemin du fichier source contenant la fiche du fournisseur,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Date du fichier source de la fiche fournisseur,Date du fichier source de la fiche fournisseur,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Horodatage d’ingestion du fichier dans le lac de données (epoch),Horodatage d’ingestion du fichier dans le lac de données (epoch),accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.fournisseurs_fiches,column_description,Mois d’ingestion du fichier au format AAAA‑MM,Mois d’ingestion du fichier au format AAAA‑MM,accepted
+bronze.fournisseurs_fiches,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,detected_sector,distribution de biens de consommation,distribution de biens de consommation,accepted
+bronze.hist_prix,data_domain,historique des prix des articles,historique des prix des articles,accepted
+bronze.hist_prix,business_description,"Cette table conserve l'historique mensuel des prix d'achat et de vente de chaque article. Chaque ligne représente le prix d'un article (cd_art) pour une période donnée (per/_mois). Elle sert aux analyses de marge, à la tarification et au suivi des évolutions tarifaires.","Cette table conserve l'historique mensuel des prix d'achat et de vente de chaque article. Chaque ligne représente le prix d'un article (cd_art) pour une période donnée (per/_mois). Elle sert aux analyses de marge, à la tarification et au suivi des évolutions tarifaires.",accepted
+bronze.hist_prix,typical_consumers,"analyste prix, responsable de la marge, directeur commercial","analyste prix, responsable de la marge, directeur commercial",accepted
+bronze.hist_prix,confidentiality_level,Internal,Internal,accepted
+bronze.hist_prix,suggested_tags,analyse_marge | article | distribution_consommation | erp_ingestion | historique_prix | type_vente_13 | type_vente_19 | type_vente_7,analyse_marge | article | distribution_consommation | erp_ingestion | type_vente_13 | type_vente_19 | type_vente_7,edited
+bronze.hist_prix,keywords,analyse tarifaire | erp prix | historique prix | marge | prix article | prix mensuel,analyse tarifaire | erp prix | historique prix | marge | prix article | prix mensuel,accepted
+bronze.hist_prix,column_description,Identifiant unique de l'article dans l'ERP,Identifiant unique de l'article dans l'ERP,accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Période du prix au format année-mois (ex. 2025-03),Période du prix au format année-mois (ex. 2025-03),accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Prix d'achat de l'article pour la période,Prix d'achat de l'article pour la période,accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Prix de vente hors taxes de l'article pour la période,Prix de vente hors taxes de l'article pour la période,accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Prix total (incluant taxes) de l'article pour la période,Prix total (incluant taxes) de l'article pour la période,accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,"Code du type de vente (ex. 7, 13, 19)","Code du type de vente (ex. 7, 13, 19)",accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Taux de marge appliqué à l'article pour la période,Taux de marge appliqué à l'article pour la période,accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Chemin du fichier source contenant les données brutes,Chemin du fichier source contenant les données brutes,accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Date de création du fichier source (valeur manquante dans l'échantillon),Date de création du fichier source (valeur manquante dans l'échantillon),accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,Horodatage d'ingestion du fichier dans le lac de données (format epoch),Horodatage d'ingestion du fichier dans le lac de données (format epoch),accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.hist_prix,column_description,"Mois de la donnée, redondant avec la colonne per","Mois de la donnée, redondant avec la colonne per",accepted
+bronze.hist_prix,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,detected_sector,children's apparel retail,children's apparel retail,accepted
+bronze.items_06,data_domain,product catalogue,product catalogue,accepted
+bronze.items_06,business_description,"Cette table contient le référentiel des articles de vêtements, chaque ligne représente un SKU unique identifié par cd_art. Elle sert les équipes de merchandising et de tarification pour gérer les prix d'achat, de vente et les fournisseurs.","Cette table contient le référentiel des articles de vêtements, chaque ligne représente un SKU unique identifié par cd_art. Elle sert les équipes de merchandising et de tarification pour gérer les prix d'achat, de vente et les fournisseurs.",accepted
+bronze.items_06,typical_consumers,"acheteur, responsable merchandising, analyste prix","acheteur, responsable merchandising, analyste prix",accepted
+bronze.items_06,confidentiality_level,Internal,Internal,accepted
+bronze.items_06,suggested_tags,article_vetement_enfant | categorie_manteau | etat_condition_vente | fournisseur_code | prix_achat | prix_vente | process_approvisionnement | unite_piece,article_vetement_enfant | categorie_manteau | etat_condition_vente | fournisseur_code | prix_achat | prix_vente | process_approvisionnement | unite_piece,accepted
+bronze.items_06,keywords,code barre | fournisseur | prix d'achat | stock | vêtement enfant,code barre | fournisseur | prix d'achat | stock | vêtement enfant,accepted
+bronze.items_06,column_description,Identifiant unique du produit (SKU) dans le système ERP.,Identifiant unique du produit (SKU) dans le système ERP.,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Désignation ou libellé commercial du produit, incluant la catégorie, le genre et la taille.","Désignation ou libellé commercial du produit, incluant la catégorie, le genre et la taille.",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Code-barres EAN13 du produit, utilisé pour l'identification externe.","Code-barres EAN13 du produit, utilisé pour l'identification externe.",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Prix d'achat du produit hors taxes, exprimé en euros.","Prix d'achat du produit hors taxes, exprimé en euros.",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Prix de vente hors taxes conseillé, exprimé en euros.","Prix de vente hors taxes conseillé, exprimé en euros.",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Prix de vente TTC (toutes taxes comprises) du produit, exprimé en euros.","Prix de vente TTC (toutes taxes comprises) du produit, exprimé en euros.",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Taux de TVA appliqué au produit (valeur fixe 19%).,Taux de TVA appliqué au produit (valeur fixe 19%).,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Code du fournisseur associé à l'article.,Code du fournisseur associé à l'article.,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Unité de mesure de vente du produit (ex. PCE pour pièce, L pour litre).","Unité de mesure de vente du produit (ex. PCE pour pièce, L pour litre).",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Chemin S3 du fichier source contenant les données de l'article.,Chemin S3 du fichier source contenant les données de l'article.,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Date de création du fichier source.,Date de création du fichier source.,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Horodatage d'ingestion du fichier dans le lac de données (timestamp Unix).,Horodatage d'ingestion du fichier dans le lac de données (timestamp Unix).,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Mois de référence du lot de données (format AAAA-MM).,Mois de référence du lot de données (format AAAA-MM).,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,"Condition de vente du produit (ex. PCE, L) ou vide si non spécifiée.","Condition de vente du produit (ex. PCE, L) ou vide si non spécifiée.",accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.items_06,column_description,Date de dernière mise à jour de l'enregistrement dans le système ERP.,Date de dernière mise à jour de l'enregistrement dans le système ERP.,accepted
+bronze.items_06,column_sensitivity,Internal,Internal,accepted
+bronze.pos_logs,detected_sector,distribution de produits alimentaires - supermarché,distribution de produits alimentaires - supermarché,accepted
+bronze.pos_logs,data_domain,transactions de caisse,transactions de caisse,accepted
+bronze.pos_logs,business_description,"Cette table consigne les journaux d'événements du système de point de vente (POS) pour chaque ticket, fermeture de caisse et scan de produit. Elle sert à analyser les ventes, les modes de paiement et la performance des caisses au quotidien.","Cette table consigne les journaux d'événements du système de point de vente (POS) pour chaque ticket, fermeture de caisse et scan de produit. Elle sert à analyser les ventes, les modes de paiement et la performance des caisses au quotidien.",accepted
+bronze.pos_logs,typical_consumers,"analyste de ventes, responsable de magasin, directeur d'exploitation, responsable de la trésorerie","analyste de ventes, responsable de magasin, directeur d'exploitation, responsable de la trésorerie",accepted
+bronze.pos_logs,confidentiality_level,Internal,Internal,accepted
+bronze.pos_logs,suggested_tags,caisse_register | event_scan | mode_scanner | paiement_cb | paiement_cheque | paiement_espece | supermarche_transactions | ticket_close | type_scan,caisse_register | event_scan | mode_scanner | paiement_cheque | paiement_espece | supermarche_transactions | ticket_close | type_scan,edited
+bronze.pos_logs,keywords,analyse ventes | journal pos | paiement cb | paiement espèces | ticket de caisse,analyse ventes | journal pos | paiement cb | paiement espèces | ticket de caisse,accepted
+bronze.pos_logs,column_description,"Contenu JSON du journal d'événement POS, incluant horodatage, type d'événement, identifiants de ticket, caisse, caissier, mode de paiement, etc.","Contenu JSON du journal d'événement POS, incluant horodatage, type d'événement, identifiants de ticket, caisse, caissier, mode de paiement, etc.",accepted
+bronze.pos_logs,column_sensitivity,Internal,Internal,accepted
+bronze.pos_logs,column_description,Chemin S3 du fichier brut contenant les logs POS du jour.,Chemin S3 du fichier brut contenant les logs POS du jour.,accepted
+bronze.pos_logs,column_sensitivity,Internal,Internal,accepted
+bronze.pos_logs,column_description,Date du jour de génération du fichier de logs.,Date du jour de génération du fichier de logs.,accepted
+bronze.pos_logs,column_sensitivity,Internal,Internal,accepted
+bronze.pos_logs,column_description,Identifiant unique du point de vente (magasin).,Identifiant unique du point de vente (magasin).,accepted
+bronze.pos_logs,column_sensitivity,Internal,Internal,accepted
+bronze.pos_logs,column_description,Horodatage d'ingestion du lot de logs dans le lac de données (epoch ms).,Horodatage d'ingestion du lot de logs dans le lac de données (epoch ms).,accepted
+bronze.pos_logs,column_sensitivity,Internal,Internal,accepted
+bronze.pos_logs,column_description,Mois (année‑mois) associé aux logs.,Mois (année‑mois) associé aux logs.,accepted
+bronze.pos_logs,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,detected_sector,distribution alimentaire - grande distribution,distribution alimentaire - grande distribution,accepted
+bronze.prod_a,data_domain,catalogue produits alimentaires,catalogue produits alimentaires,accepted
+bronze.prod_a,business_description,"Cette table contient le référentiel maître des produits alimentaires commercialisés par le distributeur. Chaque ligne représente un article unique avec ses caractéristiques commerciales, son prix d’achat, son prix de vente hors TVA, son fournisseur et ses métadonnées d’ingestion. Elle sert aux équipes d’achat, de pricing et de gestion de catalogue pour assurer la cohérence des données produit dans l’ERP et les flux de données du Lakehouse.","Cette table contient le référentiel maître des produits alimentaires commercialisés par le distributeur. Chaque ligne représente un article unique avec ses caractéristiques commerciales, son prix d’achat, son prix de vente hors TVA, son fournisseur et ses métadonnées d’ingestion. Elle sert aux équipes d’achat, de pricing et de gestion de catalogue pour assurer la cohérence des données produit dans l’ERP et les flux de données du Lakehouse.",accepted
+bronze.prod_a,typical_consumers,"acheteur, responsable approvisionnement, analyste prix, gestionnaire catalogue","acheteur, responsable approvisionnement, analyste prix, gestionnaire catalogue",accepted
+bronze.prod_a,confidentiality_level,Internal,Internal,accepted
+bronze.prod_a,suggested_tags,catalogue_erp | condition_u | fournisseur_retail | prix_achat | prix_vente_ht | produit_alimentaire | tva_13 | tva_7 | unite_kg | unite_l,catalogue_erp | condition_u | fournisseur_retail | prix_achat | prix_vente_ht | produit_alimentaire | tva_13 | tva_7 | unite_kg | unite_l,accepted
+bronze.prod_a,keywords,ean | fournisseur | prix d'achat | produits alimentaires | taxe tva | unité de vente,ean | fournisseur | prix d'achat | produits alimentaires | taxe tva | unité de vente,accepted
+bronze.prod_a,column_description,Identifiant interne unique du produit dans le système ERP.,Identifiant interne unique du produit dans le système ERP.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Libellé descriptif du produit tel qu’il apparaît dans le catalogue.,Libellé descriptif du produit tel qu’il apparaît dans le catalogue.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Code‑barres EAN à 13 chiffres utilisé pour identifier le produit à l’échelle internationale.,Code‑barres EAN à 13 chiffres utilisé pour identifier le produit à l’échelle internationale.,accepted
+bronze.prod_a,column_sensitivity,Public,Public,accepted
+bronze.prod_a,column_description,"Prix d’achat du produit hors taxes, exprimé en euros.","Prix d’achat du produit hors taxes, exprimé en euros.",accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,"Prix de vente hors TVA du produit, exprimé en euros.","Prix de vente hors TVA du produit, exprimé en euros.",accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Taux de TVA applicable au produit (ex. 7 % ou 13 %).,Taux de TVA applicable au produit (ex. 7 % ou 13 %).,accepted
+bronze.prod_a,column_sensitivity,Public,Public,accepted
+bronze.prod_a,column_description,Identifiant interne du fournisseur associé à l’article.,Identifiant interne du fournisseur associé à l’article.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,"Unité de vente du produit (ex. U, KG, L).","Unité de vente du produit (ex. U, KG, L).",accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Chemin complet du fichier source contenant les données du produit dans le data lake.,Chemin complet du fichier source contenant les données du produit dans le data lake.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Date du fichier source d’où provient l’enregistrement du produit.,Date du fichier source d’où provient l’enregistrement du produit.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Horodatage de l’ingestion du fichier dans le Lakehouse.,Horodatage de l’ingestion du fichier dans le Lakehouse.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Mois de référence du jeu de données (format AAAA‑MM).,Mois de référence du jeu de données (format AAAA‑MM).,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,"Condition de vente ou type d’emballage du produit (ex. U, KG).","Condition de vente ou type d’emballage du produit (ex. U, KG).",accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_a,column_description,Date de la dernière mise à jour de l’enregistrement produit dans l’ERP.,Date de la dernière mise à jour de l’enregistrement produit dans l’ERP.,accepted
+bronze.prod_a,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,detected_sector,distribution de produits de grande consommation - hypermarché,distribution de produits de grande consommation - hypermarché,accepted
+bronze.prod_x1,data_domain,catalogue de produits,catalogue de produits,accepted
+bronze.prod_x1,business_description,"Cette table répertorie le catalogue détaillé des articles commercialisés dans l'hypermarché, avec leurs caractéristiques commerciales et logistiques. Elle sert aux équipes d'achat, de pricing et de gestion des stocks pour assurer la disponibilité et la rentabilité des produits.","Cette table répertorie le catalogue détaillé des articles commercialisés dans l'hypermarché, avec leurs caractéristiques commerciales et logistiques. Elle sert aux équipes d'achat, de pricing et de gestion des stocks pour assurer la disponibilité et la rentabilité des produits.",accepted
+bronze.prod_x1,typical_consumers,"acheteur, gestionnaire de stock, responsable merchandising, analyste prix","acheteur, gestionnaire de stock, responsable merchandising, analyste prix",accepted
+bronze.prod_x1,confidentiality_level,Confidential,Confidential,accepted
+bronze.prod_x1,suggested_tags,condition_boite | condition_kilogramme | condition_unite | processus_approvisionnement | produit_gms | tva_19 | unite_kilogramme | unite_litre | unite_piece,condition_boite | condition_kilogramme | condition_unite | processus_approvisionnement | produit_gms | tva_19 | unite_kilogramme | unite_litre | unite_piece,accepted
+bronze.prod_x1,keywords,catalogue produits | code-barres | prix d'achat | prix de vente | taux tva | unité de mesure,catalogue produits | code-barres | prix d'achat | prix de vente | taux tva | unité de mesure,accepted
+bronze.prod_x1,column_description,Identifiant unique du produit dans le système ERP.,Identifiant unique du produit dans le système ERP.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Libellé complet du produit tel qu'il apparaît dans le catalogue.,Libellé complet du produit tel qu'il apparaît dans le catalogue.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Code-barres à 13 chiffres utilisé pour l'identification commerciale.,Code-barres à 13 chiffres utilisé pour l'identification commerciale.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Prix d'achat hors taxes du produit.,Prix d'achat hors taxes du produit.,accepted
+bronze.prod_x1,column_sensitivity,Confidential,Confidential,accepted
+bronze.prod_x1,column_description,Prix de vente hors taxes du produit.,Prix de vente hors taxes du produit.,accepted
+bronze.prod_x1,column_sensitivity,Confidential,Confidential,accepted
+bronze.prod_x1,column_description,Marge brute exprimée en pourcentage du prix de vente.,Marge brute exprimée en pourcentage du prix de vente.,accepted
+bronze.prod_x1,column_sensitivity,Confidential,Confidential,accepted
+bronze.prod_x1,column_description,"Taux de TVA applicable au produit, exprimé en pourcentage.","Taux de TVA applicable au produit, exprimé en pourcentage.",accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Code du fournisseur qui fournit le produit.,Code du fournisseur qui fournit le produit.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,"Unité de mesure de vente du produit (ex. pièce, litre, kilogramme).","Unité de mesure de vente du produit (ex. pièce, litre, kilogramme).",accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Chemin S3 du fichier source contenant les enregistrements du produit.,Chemin S3 du fichier source contenant les enregistrements du produit.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Date du fichier source d'extraction des données produit.,Date du fichier source d'extraction des données produit.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Horodatage Unix (epoch) du moment où le produit a été ingéré dans le lac de données.,Horodatage Unix (epoch) du moment où le produit a été ingéré dans le lac de données.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Mois de référence (année-mois) de l'extraction du produit.,Mois de référence (année-mois) de l'extraction du produit.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,"Condition de vente du produit (ex. unité, boîte, kilogramme, pièce).","Condition de vente du produit (ex. unité, boîte, kilogramme, pièce).",accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.prod_x1,column_description,Date de la dernière mise à jour du produit dans le système source.,Date de la dernière mise à jour du produit dans le système source.,accepted
+bronze.prod_x1,column_sensitivity,Internal,Internal,accepted
+bronze.promos,detected_sector,distribution alimentaire - supermarché,distribution alimentaire - supermarché,accepted
+bronze.promos,data_domain,promotions produits,promotions produits,accepted
+bronze.promos,business_description,"Cette table enregistre chaque promotion appliquée à un article, avec ses dates de début et de fin, le taux de remise, le type de promotion et l'identifiant de la campagne. Chaque ligne représente une période promotionnelle unique pour un SKU. Elle sert à planifier, suivre et analyser l'impact des campagnes promotionnelles.","Cette table enregistre chaque promotion appliquée à un article, avec ses dates de début et de fin, le taux de remise, le type de promotion et l'identifiant de la campagne. Chaque ligne représente une période promotionnelle unique pour un SKU. Elle sert à planifier, suivre et analyser l'impact des campagnes promotionnelles.",accepted
+bronze.promos,typical_consumers,"chef de rayon, analyste marketing, responsable promotions","chef de rayon, analyste marketing, responsable promotions",accepted
+bronze.promos,confidentiality_level,Internal,Internal,accepted
+bronze.promos,suggested_tags,catalogue_art | distribution_alimentaire | gestion_promotions | promotion_produit | taux_remise | type_aleatoire | type_ramadan,catalogue_art | distribution_alimentaire | gestion_promotions | type_aleatoire | type_ramadan,edited
+bronze.promos,keywords,aleatoire | date promotion | promotion produit | ramadan | taux remise,aleatoire | date promotion | promotion produit | ramadan | taux remise,accepted
+bronze.promos,column_description,Code article unique du produit,Code article unique du produit,accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Date de début de la période promotionnelle,Date de début de la période promotionnelle,accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Date de fin de la période promotionnelle,Date de fin de la période promotionnelle,accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Taux de remise appliqué (en pourcentage),Taux de remise appliqué (en pourcentage),accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Type de promotion (ex. RAMADAN ou ALEATOIRE),Type de promotion (ex. RAMADAN ou ALEATOIRE),accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Identifiant unique de la campagne promotionnelle,Identifiant unique de la campagne promotionnelle,accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Segment de clientèle ciblé (ex. TOUS),Segment de clientèle ciblé (ex. TOUS),accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Chemin du fichier source contenant les données de promotion,Chemin du fichier source contenant les données de promotion,accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Date de création du fichier source (valeur manquante dans l'échantillon),Date de création du fichier source (valeur manquante dans l'échantillon),accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Horodatage d'ingestion du fichier dans le lac de données,Horodatage d'ingestion du fichier dans le lac de données,accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.promos,column_description,Mois de référence de la promotion (format AAAA-MM),Mois de référence de la promotion (format AAAA-MM),accepted
+bronze.promos,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,detected_sector,fabrication de produits d'entretien ménager,fabrication de produits d'entretien ménager,accepted
+bronze.ref_produit_04,data_domain,référentiel produits nettoyage,référentiel produits nettoyage,accepted
+bronze.ref_produit_04,business_description,"Cette table répertorie le catalogue des références produits d'entretien ménager, avec leurs prix d'achat, de vente et leurs marges. Elle sert aux équipes de tarification, de gestion des fournisseurs et de planification des approvisionnements.","Cette table répertorie le catalogue des références produits d'entretien ménager, avec leurs prix d'achat, de vente et leurs marges. Elle sert aux équipes de tarification, de gestion des fournisseurs et de planification des approvisionnements.",accepted
+bronze.ref_produit_04,typical_consumers,"acheteurs, responsables de la chaîne d'approvisionnement, chefs de catégorie, analystes de prix","acheteurs, responsables de la chaîne d'approvisionnement, chefs de catégorie, analystes de prix",accepted
+bronze.ref_produit_04,confidentiality_level,Internal,Internal,accepted
+bronze.ref_produit_04,suggested_tags,catalogue_produit | code_fournisseur_f0073 | fournisseur_code | processus_prix_vente | produit_entretien_menager | taxe_valeur_19 | unite_vente_kg | unite_vente_u,catalogue_produit | code_fournisseur_f0073 | fournisseur_code | processus_prix_vente | produit_entretien_menager | taxe_valeur_19 | unite_vente_kg | unite_vente_u,accepted
+bronze.ref_produit_04,keywords,code fournisseur | marge brute | prix d'achat | prix de vente | produits nettoyage | unité de vente,code fournisseur | marge brute | prix d'achat | prix de vente | produits nettoyage | unité de vente,accepted
+bronze.ref_produit_04,column_description,Identifiant interne unique du produit.,Identifiant interne unique du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Nom commercial du produit tel qu'il apparaît dans le catalogue.,Nom commercial du produit tel qu'il apparaît dans le catalogue.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Prix d'achat hors taxes du produit.,Prix d'achat hors taxes du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Prix de vente hors taxes du produit.,Prix de vente hors taxes du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Prix de vente toutes taxes comprises du produit.,Prix de vente toutes taxes comprises du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Pourcentage de marge brute du produit.,Pourcentage de marge brute du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Code ou taux de taxe appliqué (valeur constante 19).,Code ou taux de taxe appliqué (valeur constante 19).,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Code interne du fournisseur du produit.,Code interne du fournisseur du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,"Unité de vente du produit (U pour unité, L pour litre).","Unité de vente du produit (U pour unité, L pour litre).",accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Chemin S3 du fichier source contenant les données du produit.,Chemin S3 du fichier source contenant les données du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Date du fichier source.,Date du fichier source.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Horodatage d'ingestion du fichier (timestamp epoch).,Horodatage d'ingestion du fichier (timestamp epoch).,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Mois d'ingestion au format AAAA-MM.,Mois d'ingestion au format AAAA-MM.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,"Conditionnement de vente (U, KG, etc.).","Conditionnement de vente (U, KG, etc.).",accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.ref_produit_04,column_description,Date de dernière mise à jour du produit.,Date de dernière mise à jour du produit.,accepted
+bronze.ref_produit_04,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,detected_sector,distribution de détail - supermarchés,distribution de détail - supermarchés,accepted
+bronze.rh_employes,data_domain,effectif magasin,effectif magasin,accepted
+bronze.rh_employes,business_description,"Cette table répertorie les employés de chaque magasin, avec leurs identifiants, postes, salaires et informations de contact. Elle sert les besoins de gestion du personnel, de la paie et du suivi des effectifs par site.","Cette table répertorie les employés de chaque magasin, avec leurs identifiants, postes, salaires et informations de contact. Elle sert les besoins de gestion du personnel, de la paie et du suivi des effectifs par site.",accepted
+bronze.rh_employes,typical_consumers,"responsable RH, directeur de magasin, analyste de main-d'œuvre, contrôleur de paie","responsable RH, directeur de magasin, analyste de main-d'œuvre, contrôleur de paie",accepted
+bronze.rh_employes,confidentiality_level,Restricted,Restricted,accepted
+bronze.rh_employes,suggested_tags,gestion_paie | magasin_08 | numero_securite_sociale | personnel_supermarche | poste_caissier | poste_vendeur | rib_compte | salaire_brut,gestion_paie | magasin_08 | numero_securite_sociale | personnel_supermarche | poste_vendeur | rib_compte,edited
+bronze.rh_employes,keywords,employés magasin | numéro de sécurité sociale | poste caissier | salaire brut | téléphone personnel,employés magasin | numéro de sécurité sociale | poste caissier | salaire brut | téléphone personnel,accepted
+bronze.rh_employes,column_description,Identifiant interne unique de chaque employé.,Identifiant interne unique de chaque employé.,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Nom de famille de l'employé.,Nom de famille de l'employé.,accepted
+bronze.rh_employes,column_sensitivity,Confidential,Confidential,accepted
+bronze.rh_employes,column_description,Prénom de l'employé.,Prénom de l'employé.,accepted
+bronze.rh_employes,column_sensitivity,Confidential,Confidential,accepted
+bronze.rh_employes,column_description,Numéro de carte d'identité nationale (CIN) de l'employé.,Numéro de carte d'identité nationale (CIN) de l'employé.,accepted
+bronze.rh_employes,column_sensitivity,Restricted,Restricted,accepted
+bronze.rh_employes,column_description,Numéro de téléphone personnel de l'employé.,Numéro de téléphone personnel de l'employé.,accepted
+bronze.rh_employes,column_sensitivity,Confidential,Confidential,accepted
+bronze.rh_employes,column_description,"Intitulé du poste occupé dans le magasin (ex. caissier, vendeur).","Intitulé du poste occupé dans le magasin (ex. caissier, vendeur).",accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Code du magasin où l'employé travaille.,Code du magasin où l'employé travaille.,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Salaire de base mensuel de l'employé en monnaie locale.,Salaire de base mensuel de l'employé en monnaie locale.,accepted
+bronze.rh_employes,column_sensitivity,Confidential,Confidential,accepted
+bronze.rh_employes,column_description,Date d'embauche de l'employé.,Date d'embauche de l'employé.,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Relevé d'identité bancaire de l'employé pour le versement des salaires.,Relevé d'identité bancaire de l'employé pour le versement des salaires.,accepted
+bronze.rh_employes,column_sensitivity,Restricted,Restricted,accepted
+bronze.rh_employes,column_description,Chemin du fichier source contenant les enregistrements.,Chemin du fichier source contenant les enregistrements.,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Date de création du fichier source.,Date de création du fichier source.,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Horodatage d'ingestion du fichier dans le lac de données.,Horodatage d'ingestion du fichier dans le lac de données.,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.rh_employes,column_description,Mois de référence du jeu de données (format AAAA-MM).,Mois de référence du jeu de données (format AAAA-MM).,accepted
+bronze.rh_employes,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,detected_sector,distribution de produits de grande consommation - supermarchés,distribution de produits de grande consommation - supermarchés,accepted
+bronze.stock_mouvements,data_domain,mouvements de stock,mouvements de stock,accepted
+bronze.stock_mouvements,business_description,"Cette table enregistre chaque mouvement d'entrée ou de sortie de stock au niveau des magasins. Chaque ligne représente le déplacement d'un article identifié, avec sa quantité et sa valeur d'achat, à une date précise. Elle sert à suivre l'inventaire quotidien et à alimenter les processus de réapprovisionnement et d'analyse de la rotation des produits.","Cette table enregistre chaque mouvement d'entrée ou de sortie de stock au niveau des magasins. Chaque ligne représente le déplacement d'un article identifié, avec sa quantité et sa valeur d'achat, à une date précise. Elle sert à suivre l'inventaire quotidien et à alimenter les processus de réapprovisionnement et d'analyse de la rotation des produits.",accepted
+bronze.stock_mouvements,typical_consumers,"gestionnaires de magasin, analystes supply chain, responsables d'approvisionnement","gestionnaires de magasin, analystes supply chain, responsables d'approvisionnement",accepted
+bronze.stock_mouvements,confidentiality_level,Internal,Internal,accepted
+bronze.stock_mouvements,suggested_tags,article_produit | ingestion_timestamp | magasin | quantite_mouvement | stock_mouvement_supermarche | type_entree | type_sortie | valeur_achat,article_produit | ingestion_timestamp | magasin | quantite_mouvement | stock_mouvement_supermarche | type_entree | type_sortie | valeur_achat,accepted
+bronze.stock_mouvements,keywords,entrée sortie stock | gestion des stocks | historique stock | quantité article | stock magasin | valeur d'achat,entrée sortie stock | gestion des stocks | historique stock | quantité article | stock magasin | valeur d'achat,accepted
+bronze.stock_mouvements,column_description,Identifiant du magasin où le mouvement de stock a eu lieu.,Identifiant du magasin où le mouvement de stock a eu lieu.,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Date du mouvement de stock (entrée ou sortie).,Date du mouvement de stock (entrée ou sortie).,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,"Code article du produit concerné, identifiant unique du produit.","Code article du produit concerné, identifiant unique du produit.",accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,"Type de mouvement : ""S"" pour sortie, ""E"" pour entrée.","Type de mouvement : ""S"" pour sortie, ""E"" pour entrée.",accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Quantité d'articles déplacés lors du mouvement.,Quantité d'articles déplacés lors du mouvement.,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Valeur du prix d'achat unitaire du produit au moment du mouvement.,Valeur du prix d'achat unitaire du produit au moment du mouvement.,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Chemin du fichier source contenant la donnée du mouvement.,Chemin du fichier source contenant la donnée du mouvement.,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Date du fichier source.,Date du fichier source.,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Identifiant du magasin (redondant avec mg).,Identifiant du magasin (redondant avec mg).,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,Timestamp d'ingestion du fichier dans le lac de données (epoch en millisecondes).,Timestamp d'ingestion du fichier dans le lac de données (epoch en millisecondes).,accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.stock_mouvements,column_description,"Mois agrégé du mouvement, au format AAAA-MM.","Mois agrégé du mouvement, au format AAAA-MM.",accepted
+bronze.stock_mouvements,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,detected_sector,industrie pharmaceutique / distribution de médicaments et produits de santé,industrie pharmaceutique / distribution de médicaments et produits de santé,accepted
+bronze.t_prd_03,data_domain,catalogue de produits pharmaceutiques,catalogue de produits pharmaceutiques,accepted
+bronze.t_prd_03,business_description,"Cette table répertorie le catalogue détaillé des articles commercialisés (médicaments, compléments, cosmétiques) avec leurs caractéristiques tarifaires et fournisseurs. Elle sert aux équipes d'achat, de pricing et de gestion de stock pour piloter les marges et la conformité fiscale.","Cette table répertorie le catalogue détaillé des articles commercialisés (médicaments, compléments, cosmétiques) avec leurs caractéristiques tarifaires et fournisseurs. Elle sert aux équipes d'achat, de pricing et de gestion de stock pour piloter les marges et la conformité fiscale.",accepted
+bronze.t_prd_03,typical_consumers,"responsables achats, chefs de rayon, analystes de prix, gestionnaires de stock","responsables achats, chefs de rayon, analystes de prix, gestionnaires de stock",accepted
+bronze.t_prd_03,confidentiality_level,Internal,Internal,accepted
+bronze.t_prd_03,suggested_tags,conditionnement_bte | fournisseur_f0063 | process_marge | process_prix_vente | produits_pharmaceutiques | tva_19 | tva_7,conditionnement_bte | fournisseur_f0063 | process_marge | process_prix_vente | produits_pharmaceutiques | tva_19 | tva_7,accepted
+bronze.t_prd_03,keywords,code‑barres | fournisseur | marge produit | prix d'achat | prix de vente ht | taux de tva,code‑barres | fournisseur | marge produit | prix d'achat | prix de vente ht | taux de tva,accepted
+bronze.t_prd_03,column_description,Identifiant interne unique de chaque article du catalogue produit.,Identifiant interne unique de chaque article du catalogue produit.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Dénomination commerciale du produit telle qu’elle apparaît sur l’étiquette.,Dénomination commerciale du produit telle qu’elle apparaît sur l’étiquette.,accepted
+bronze.t_prd_03,column_sensitivity,Public,Public,accepted
+bronze.t_prd_03,column_description,"Code‑barres EAN 13 du produit, utilisé pour l’identification en point de vente.","Code‑barres EAN 13 du produit, utilisé pour l’identification en point de vente.",accepted
+bronze.t_prd_03,column_sensitivity,Public,Public,accepted
+bronze.t_prd_03,column_description,Prix d’achat (coût) du produit pour l’entreprise.,Prix d’achat (coût) du produit pour l’entreprise.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Prix de vente hors taxe affiché aux clients.,Prix de vente hors taxe affiché aux clients.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Prix de vente toutes taxes comprises.,Prix de vente toutes taxes comprises.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Marge brute réalisée sur le produit (en pourcentage).,Marge brute réalisée sur le produit (en pourcentage).,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Taux de TVA applicable au produit (7 % ou 19 %).,Taux de TVA applicable au produit (7 % ou 19 %).,accepted
+bronze.t_prd_03,column_sensitivity,Public,Public,accepted
+bronze.t_prd_03,column_description,Identifiant interne du fournisseur qui fournit le produit.,Identifiant interne du fournisseur qui fournit le produit.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Unité de vente du produit (ex. : BTE pour boîte).,Unité de vente du produit (ex. : BTE pour boîte).,accepted
+bronze.t_prd_03,column_sensitivity,Public,Public,accepted
+bronze.t_prd_03,column_description,Chemin S3 du fichier source contenant les enregistrements du produit.,Chemin S3 du fichier source contenant les enregistrements du produit.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Date du fichier source d’extraction des données produit.,Date du fichier source d’extraction des données produit.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Horodatage d’ingestion du fichier dans le lac de données (epoch).,Horodatage d’ingestion du fichier dans le lac de données (epoch).,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Mois de référence du jeu de données produit (format AAAA‑MM).,Mois de référence du jeu de données produit (format AAAA‑MM).,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.t_prd_03,column_description,Conditionnement de vente du produit (ex. : BTE).,Conditionnement de vente du produit (ex. : BTE).,accepted
+bronze.t_prd_03,column_sensitivity,Public,Public,accepted
+bronze.t_prd_03,column_description,Date de la dernière mise à jour de l’enregistrement produit.,Date de la dernière mise à jour de l’enregistrement produit.,accepted
+bronze.t_prd_03,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,detected_sector,distribution alimentaire - supermarché,distribution alimentaire - supermarché,accepted
+bronze.ventes_lignes,data_domain,détails de ventes,détails de ventes,accepted
+bronze.ventes_lignes,business_description,"Cette table enregistre chaque ligne de ticket de caisse d'un supermarché. Chaque enregistrement représente un article vendu avec ses quantités, prix, remise et taxes. Elle sert aux analyses de chiffre d'affaires, de gestion des stocks et de suivi de la fidélité client.","Cette table enregistre chaque ligne de ticket de caisse d'un supermarché. Chaque enregistrement représente un article vendu avec ses quantités, prix, remise et taxes. Elle sert aux analyses de chiffre d'affaires, de gestion des stocks et de suivi de la fidélité client.",accepted
+bronze.ventes_lignes,typical_consumers,"responsable magasin, analyste ventes, directeur approvisionnement","responsable magasin, analyste ventes, directeur approvisionnement",accepted
+bronze.ventes_lignes,confidentiality_level,Internal,Internal,accepted
+bronze.ventes_lignes,suggested_tags,magasin_01 | point_fidelite | produits_alimentaires | remise_0 | remise_10 | remise_5 | tva_13 | tva_19 | tva_7 | ventes_detail,magasin_01 | point_fidelite | produits_alimentaires | remise_0 | remise_10 | remise_5 | tva_13 | tva_19 | tva_7 | ventes_detail,accepted
+bronze.ventes_lignes,keywords,article produit | prix unitaire | quantité vendue | taxe tva | ticket caisse | ventes magasin,article produit | prix unitaire | quantité vendue | taxe tva | ticket caisse | ventes magasin,accepted
+bronze.ventes_lignes,column_description,"Identifiant unique du ticket de caisse, incluant le magasin, la date et un numéro séquentiel.","Identifiant unique du ticket de caisse, incluant le magasin, la date et un numéro séquentiel.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Numéro de ligne du ticket, indiquant la position de l'article dans la transaction.","Numéro de ligne du ticket, indiquant la position de l'article dans la transaction.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Code article du produit vendu, utilisé comme référence produit interne.","Code article du produit vendu, utilisé comme référence produit interne.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,Quantité d'unités vendues pour l'article sur la ligne.,Quantité d'unités vendues pour l'article sur la ligne.,accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,Prix unitaire hors taxes du produit au moment de la vente.,Prix unitaire hors taxes du produit au moment de la vente.,accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Pourcentage de remise appliquée à la ligne, le champ peut être vide lorsqu'aucune remise n'est accordée.","Pourcentage de remise appliquée à la ligne, le champ peut être vide lorsqu'aucune remise n'est accordée.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Montant total hors taxes de la ligne (prix unitaire × quantité, après remise).","Montant total hors taxes de la ligne (prix unitaire × quantité, après remise).",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Taux de TVA appliqué à la ligne, exprimé en pourcentage (ex. 7, 13, 19).","Taux de TVA appliqué à la ligne, exprimé en pourcentage (ex. 7, 13, 19).",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,Montant total toutes taxes comprises de la ligne (mt_ht + TVA).,Montant total toutes taxes comprises de la ligne (mt_ht + TVA).,accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,Chemin complet du fichier source contenant la ligne de vente dans le data lake.,Chemin complet du fichier source contenant la ligne de vente dans le data lake.,accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Date du fichier source, correspondant à la date de la transaction.","Date du fichier source, correspondant à la date de la transaction.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,Identifiant du magasin où la vente a eu lieu (magasin_01).,Identifiant du magasin où la vente a eu lieu (magasin_01).,accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Horodatage d'ingestion du fichier dans le lac de données, exprimé en epoch milliseconds.","Horodatage d'ingestion du fichier dans le lac de données, exprimé en epoch milliseconds.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Mois de la transaction au format AAAA-MM, utilisé pour le partitionnement.","Mois de la transaction au format AAAA-MM, utilisé pour le partitionnement.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_lignes,column_description,"Code de programme de fidélité ou identifiant de point de fidélité associé à la transaction, peut être nul.","Code de programme de fidélité ou identifiant de point de fidélité associé à la transaction, peut être nul.",accepted
+bronze.ventes_lignes,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,detected_sector,distribution de détail - supermarchés,distribution de détail - supermarchés,accepted
+bronze.ventes_paiements,data_domain,transactions de paiement,transactions de paiement,accepted
+bronze.ventes_paiements,business_description,"Cette table enregistre chaque paiement effectué dans les points de vente des supermarchés, au niveau transactionnel. Elle permet aux équipes financières et opérationnelles de suivre les flux de trésorerie, d’analyser les modes de paiement et de contrôler la conformité des ventes.","Cette table enregistre chaque paiement effectué dans les points de vente des supermarchés, au niveau transactionnel. Elle permet aux équipes financières et opérationnelles de suivre les flux de trésorerie, d’analyser les modes de paiement et de contrôler la conformité des ventes.",accepted
+bronze.ventes_paiements,typical_consumers,"responsable de magasin, analyste de paiement, directeur financier, contrôleur de gestion","responsable de magasin, analyste de paiement, directeur financier, contrôleur de gestion",accepted
+bronze.ventes_paiements,confidentiality_level,Restricted,Restricted,accepted
+bronze.ventes_paiements,suggested_tags,analyse_ventes | distribution_detail | magasin_supermarche | mode_paiement_cb | mode_paiement_esp | mode_paiement_tr | transactions_paiement,distribution_detail | magasin_supermarche | mode_paiement_cb | mode_paiement_esp | mode_paiement_tr | transactions_paiement,edited
+bronze.ventes_paiements,keywords,analyse ventes | magasin 2025 | montant transaction | paiement point de vente | transactions cb | transactions esp,analyse ventes | magasin 2025 | montant transaction | paiement point de vente | transactions cb | transactions esp,accepted
+bronze.ventes_paiements,column_description,"Identifiant unique de la transaction, incluant le magasin, la date et un numéro séquentiel.","Identifiant unique de la transaction, incluant le magasin, la date et un numéro séquentiel.",accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Numéro de séquence de l’enregistrement dans le fichier de paiement.,Numéro de séquence de l’enregistrement dans le fichier de paiement.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,"Mode de paiement utilisé pour la transaction (ESP = espèces, CB = carte bancaire, TR = ticket restaurant).","Mode de paiement utilisé pour la transaction (ESP = espèces, CB = carte bancaire, TR = ticket restaurant).",accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Montant de la transaction en euros.,Montant de la transaction en euros.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,"Numéro de carte bancaire partiellement masqué, affichant uniquement les six premiers et les quatre derniers chiffres.","Numéro de carte bancaire partiellement masqué, affichant uniquement les six premiers et les quatre derniers chiffres.",accepted
+bronze.ventes_paiements,column_sensitivity,Restricted,Restricted,accepted
+bronze.ventes_paiements,column_description,Code d’autorisation de la transaction délivré par le système de paiement.,Code d’autorisation de la transaction délivré par le système de paiement.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Chemin complet du fichier source contenant la transaction dans le stockage S3.,Chemin complet du fichier source contenant la transaction dans le stockage S3.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Date du fichier de paiement (format AAAA-MM-JJ).,Date du fichier de paiement (format AAAA-MM-JJ).,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Identifiant du magasin où la transaction a été réalisée.,Identifiant du magasin où la transaction a été réalisée.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Horodatage d’ingestion du fichier en format epoch millisecondes.,Horodatage d’ingestion du fichier en format epoch millisecondes.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_paiements,column_description,Mois de référence de la transaction au format AAAA-MM.,Mois de référence de la transaction au format AAAA-MM.,accepted
+bronze.ventes_paiements,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,detected_sector,distribution de supermarché,distribution de supermarché,accepted
+bronze.ventes_tickets,data_domain,transactions de tickets de caisse,transactions de tickets de caisse,accepted
+bronze.ventes_tickets,business_description,"Chaque ligne représente un ticket de caisse enregistré au point de vente d’un supermarché. Le grain est la transaction individuelle, incluant le magasin, la caisse, le caissier, le client (le cas échéant), le nombre d'articles et les montants fiscaux. Cette table sert à analyser les performances de vente, la répartition des modes de paiement et la conformité TVA.","Chaque ligne représente un ticket de caisse enregistré au point de vente d’un supermarché. Le grain est la transaction individuelle, incluant le magasin, la caisse, le caissier, le client (le cas échéant), le nombre d'articles et les montants fiscaux. Cette table sert à analyser les performances de vente, la répartition des modes de paiement et la conformité TVA.",accepted
+bronze.ventes_tickets,typical_consumers,"directeur de magasin, responsable de la caisse, analyste ventes, contrôleur financier","directeur de magasin, responsable de la caisse, analyste ventes, contrôleur financier",accepted
+bronze.ventes_tickets,confidentiality_level,Confidential,Confidential,accepted
+bronze.ventes_tickets,suggested_tags,caisse_register | caissier_employe | client_fid | magasin_code | mode_paiement_cb | mode_paiement_chq | mode_paiement_esp | mode_paiement_tr | supermarche_transactions,caisse_register | caissier_employe | client_fid | magasin_code | mode_paiement_cb | mode_paiement_chq | mode_paiement_esp | mode_paiement_tr | supermarche_transactions,accepted
+bronze.ventes_tickets,keywords,analyse tva | paiement carte bancaire | paiement espèces | tickets de caisse | ventes pos,analyse tva | paiement carte bancaire | paiement espèces | tickets de caisse | ventes pos,accepted
+bronze.ventes_tickets,column_description,"Identifiant unique du ticket de caisse, construit à partir du magasin, de la date et d’un numéro séquentiel.","Identifiant unique du ticket de caisse, construit à partir du magasin, de la date et d’un numéro séquentiel.",accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Code du magasin où la transaction a eu lieu.,Code du magasin où la transaction a eu lieu.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Horodatage de la vente au moment de l’enregistrement du ticket.,Horodatage de la vente au moment de l’enregistrement du ticket.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Numéro de la caisse (terminal) qui a enregistré la transaction.,Numéro de la caisse (terminal) qui a enregistré la transaction.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Identifiant du caissier ayant effectué la transaction.,Identifiant du caissier ayant effectué la transaction.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,"Identifiant du client (fidélité) associé à la transaction, lorsqu’il est connu.","Identifiant du client (fidélité) associé à la transaction, lorsqu’il est connu.",accepted
+bronze.ventes_tickets,column_sensitivity,Confidential,Confidential,accepted
+bronze.ventes_tickets,column_description,Nombre d’articles vendus dans le ticket.,Nombre d’articles vendus dans le ticket.,accepted
+bronze.ventes_tickets,column_sensitivity,Public,Public,accepted
+bronze.ventes_tickets,column_description,Montant hors taxes de la transaction (en euros).,Montant hors taxes de la transaction (en euros).,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Montant de la TVA appliquée à la transaction.,Montant de la TVA appliquée à la transaction.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Montant total TTC de la transaction.,Montant total TTC de la transaction.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,"Champ réservé au mode de paiement supplémentaire, toujours vide dans l’échantillon.","Champ réservé au mode de paiement supplémentaire, toujours vide dans l’échantillon.",accepted
+bronze.ventes_tickets,column_sensitivity,Public,Public,accepted
+bronze.ventes_tickets,column_description,Chemin S3 du fichier source contenant le ticket.,Chemin S3 du fichier source contenant le ticket.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Date du fichier source contenant le ticket.,Date du fichier source contenant le ticket.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Identifiant du magasin (redondant avec mg).,Identifiant du magasin (redondant avec mg).,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Timestamp d’ingestion du fichier dans le lac de données (epoch ms).,Timestamp d’ingestion du fichier dans le lac de données (epoch ms).,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,Mois d’ingestion au format AAAA-MM.,Mois d’ingestion au format AAAA-MM.,accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted
+bronze.ventes_tickets,column_description,"Mode de paiement utilisé pour la transaction (espèces, carte bancaire, chèque, virement).","Mode de paiement utilisé pour la transaction (espèces, carte bancaire, chèque, virement).",accepted
+bronze.ventes_tickets,column_sensitivity,Internal,Internal,accepted

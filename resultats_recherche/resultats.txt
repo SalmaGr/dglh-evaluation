@@ -1,0 +1,28 @@
+== numéro de téléphone des clients
+  [recherche par nom] []
+  1. 69%  clients_crm.nt  — Column nt of table bronze.clients_crm. Numéro de téléphone mobile du client, pré
+  2. 66%  clients_fidelite.tel_cli  — Column tel_cli of table bronze.clients_fidelite. Numéro de téléphone mobile du c
+  3. 64%  fournisseurs_fiches.tel  — Column tel of table bronze.fournisseurs_fiches. Numéro de téléphone de contact d
+  4. 62%  clients_crm.ad1  — Column ad1 of table bronze.clients_crm. Adresse postale complète du client (rue,
+  5. 61%  clients_crm.n_ci  — Column n_ci of table bronze.clients_crm. Numéro de la carte d’identité nationale
+== médicaments vendus en magasin
+  [recherche par nom] []
+  1. 59%  t_prd_03.[table]  — Table bronze.t_prd_03. Cette table répertorie le catalogue détaillé des articles
+  2. 58%  ventes_tickets.magasin_id  — Column magasin_id of table bronze.ventes_tickets. Identifiant du magasin (redond
+  3. 57%  ventes_tickets.mg  — Column mg of table bronze.ventes_tickets. Code du magasin où la transaction a eu
+  4. 56%  art_divers.[table]  — Table bronze.art_divers. Cette table contient le catalogue maître des articles v
+  5. 54%  stock_mouvements.magasin_id  — Column magasin_id of table bronze.stock_mouvements. Identifiant du magasin (redo
+== adresse de domicile d'un client
+  [recherche par nom] []
+  1. 69%  clients_crm.ad1  — Column ad1 of table bronze.clients_crm. Adresse postale complète du client (rue,
+  2. 67%  clients_crm.cp  — Column cp of table bronze.clients_crm. Code postal associé à l’adresse du client
+  3. 67%  clients_crm.em  — Column em of table bronze.clients_crm. Adresse électronique du client.
+  4. 65%  clients_crm.vl  — Column vl of table bronze.clients_crm. Ville de résidence du client.
+  5. 63%  clients_crm.c_nm  — Column c_nm of table bronze.clients_crm. Nom de famille du client.
+== marge réalisée sur les produits
+  [recherche par nom] []
+  1. 74%  catalogue_05.tx_mg  — Column tx_mg of table bronze.catalogue_05. Taux de marge appliqué au produit.
+  2. 72%  articles_07.mg_pct  — Column mg_pct of table bronze.articles_07. Pourcentage de marge brute calculé su
+  3. 71%  t_prd_03.mrg  — Column mrg of table bronze.t_prd_03. Marge brute réalisée sur le produit (en pou
+  4. 71%  ref_produit_04.mg_pct  — Column mg_pct of table bronze.ref_produit_04. Pourcentage de marge brute du prod
+  5. 70%  art_02.tx_mg  — Column tx_mg of table bronze.art_02. Taux de marge du produit exprimé en proport
