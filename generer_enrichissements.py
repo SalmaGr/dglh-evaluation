@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Relance l'enrichissement (prompt v3) des tables bronze, N tours, avec EXACTEMENT les mêmes
+Relance l'enrichissement (prompt v4) des tables bronze, N tours, avec EXACTEMENT les mêmes
 échantillons que l'ancienne exécution (relus dans les anciens logs). Ne valide jamais rien.
 
   python3 generer_enrichissements.py --tours 3
@@ -88,7 +88,7 @@ if not a.refaire:   # saute les tables qui ont déjà une réponse v3 valide
     for f in glob.glob(os.path.join(a.nouveaux_logs, "*.json")):
         try: e = json.load(open(f, encoding="utf-8"))
         except Exception: continue
-        if "official identity data" in json.dumps(e.get("request", "")) and '"fields"' in str(e.get("raw_response", "")):
+        if "whoever the account holder is" in json.dumps(e.get("request", "")) and '"fields"' in str(e.get("raw_response", "")):
             faites.add(e.get("table"))
     if faites: print(f"Déjà réussies (sautées) : {', '.join(sorted(faites))}\n")
     jobs = [j for j in jobs if j[0] not in faites]
