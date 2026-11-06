@@ -1,0 +1,127 @@
+[
+ {
+  "table": "appels_transcriptions",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "art_02",
+  "colonnes_modifiees": 1,
+  "secteur_modifie": true
+ },
+ {
+  "table": "art_divers",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "articles_07",
+  "colonnes_modifiees": 1,
+  "secteur_modifie": false
+ },
+ {
+  "table": "avis_emails",
+  "colonnes_modifiees": 1,
+  "secteur_modifie": false
+ },
+ {
+  "table": "avis_reseaux_sociaux",
+  "colonnes_modifiees": 1,
+  "secteur_modifie": false
+ },
+ {
+  "table": "catalogue_05",
+  "colonnes_modifiees": 2,
+  "secteur_modifie": false
+ },
+ {
+  "table": "clients_crm",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": true
+ },
+ {
+  "table": "clients_fidelite",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "clients_web",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "ecommerce_clickstream",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "fournisseurs_fiches",
+  "colonnes_modifiees": 3,
+  "secteur_modifie": false
+ },
+ {
+  "table": "hist_prix",
+  "colonnes_modifiees": 3,
+  "secteur_modifie": false
+ },
+ {
+  "table": "items_06",
+  "colonnes_modifiees": 1,
+  "secteur_modifie": false
+ },
+ {
+  "table": "pos_logs",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "prod_a",
+  "colonnes_modifiees": 2,
+  "secteur_modifie": false
+ },
+ {
+  "table": "prod_x1",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": true
+ },
+ {
+  "table": "promos",
+  "colonnes_modifiees": 2,
+  "secteur_modifie": false
+ },
+ {
+  "table": "ref_produit_04",
+  "colonnes_modifiees": 2,
+  "secteur_modifie": false
+ },
+ {
+  "table": "rh_employes",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "stock_mouvements",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "t_prd_03",
+  "colonnes_modifiees": 0,
+  "secteur_modifie": false
+ },
+ {
+  "table": "ventes_lignes",
+  "colonnes_modifiees": 2,
+  "secteur_modifie": false
+ },
+ {
+  "table": "ventes_paiements",
+  "colonnes_modifiees": 2,
+  "secteur_modifie": false
+ },
+ {
+  "table": "ventes_tickets",
+  "colonnes_modifiees": 5,
+  "secteur_modifie": false
+ }
+]

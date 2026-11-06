@@ -1,0 +1,962 @@
+{
+ "numéro de téléphone des clients": {
+  "results": [
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "tel_cli",
+    "description": "Column tel_cli of table bronze.clients_fidelite. Numéro de téléphone du client, utilisé pour les contacts et notifications.",
+    "score": 0.745777340253356
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "nt",
+    "description": "Column nt of table bronze.clients_crm. Numéro de téléphone mobile du client, préfixe international +216 suivi de huit chiffres.",
+    "score": 0.719203586649628
+   },
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": "tel",
+    "description": "Column tel of table bronze.fournisseurs_fiches. Numéro de téléphone du contact fournisseur.",
+    "score": 0.7167933414456291
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "tel",
+    "description": "Column tel of table bronze.rh_employes. Numéro de téléphone professionnel ou personnel de l'employé.",
+    "score": 0.6950024133918237
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cli_id",
+    "description": "Column cli_id of table bronze.clients_crm. Identifiant unique du client utilisé en interne pour référencer chaque abonné.",
+    "score": 0.6892560925858933
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "em",
+    "description": "Column em of table bronze.clients_crm. Adresse électronique du client, par exemple rania.souissi@gmail.com.",
+    "score": 0.6857413853926759
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "n_ci",
+    "description": "Column n_ci of table bronze.clients_crm. Numéro de carte d'identité nationale du client, séquence numérique à huit chiffres.",
+    "score": 0.678229587500213
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "nom_prenom",
+    "description": "Column nom_prenom of table bronze.clients_fidelite. Nom complet du client, permettant de l’identifier personnellement.",
+    "score": 0.6765601581906435
+   },
+   {
+    "table_id": "01a16e8d-0efd-75d0-b7cd-8b2e5da3bcf5",
+    "column_name": "ligne_json",
+    "description": "Column ligne_json of table bronze.clients_web. Contient le profil complet du client : identifiant, nom, prénom, adresse email, numéro de mobile, adresse postale, date de création, consentement newsletter et type d’appareil.",
+    "score": 0.6601623725116861
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "c_nm",
+    "description": "Column c_nm of table bronze.clients_crm. Nom de famille du client, par exemple Mansouri ou Ben Fredj.",
+    "score": 0.6580144166947159
+   }
+  ]
+ },
+ "adresse de domicile d'un client": {
+  "results": [
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "ad1",
+    "description": "Column ad1 of table bronze.clients_crm. Adresse postale du client, incluant numéro, rue et éventuellement quartier.",
+    "score": 0.7649544301710566
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "em",
+    "description": "Column em of table bronze.clients_crm. Adresse électronique du client, par exemple rania.souissi@gmail.com.",
+    "score": 0.7072312097596476
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "vl",
+    "description": "Column vl of table bronze.clients_crm. Ville de résidence du client, par exemple Radès, Tunis ou Mahdia.",
+    "score": 0.6928571552038252
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "nom_prenom",
+    "description": "Column nom_prenom of table bronze.clients_fidelite. Nom complet du client, permettant de l’identifier personnellement.",
+    "score": 0.6836556324011538
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cp",
+    "description": "Column cp of table bronze.clients_crm. Code postal de l’adresse du client, par exemple 1000 ou 2040.",
+    "score": 0.6744752110301945
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "gv",
+    "description": "Column gv of table bronze.clients_crm. Gouvernorat de résidence du client, par exemple Tunis, Mahdia ou Sfax.",
+    "score": 0.6722530116582504
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "c_pn",
+    "description": "Column c_pn of table bronze.clients_crm. Prénom du client, par exemple Rania ou Ahmed.",
+    "score": 0.6664322217864461
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "c_nm",
+    "description": "Column c_nm of table bronze.clients_crm. Nom de famille du client, par exemple Mansouri ou Ben Fredj.",
+    "score": 0.663028676870946
+   },
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": "vil",
+    "description": "Column vil of table bronze.fournisseurs_fiches. Ville où le fournisseur est domicilié.",
+    "score": 0.6622583866119574
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cli_id",
+    "description": "Column cli_id of table bronze.clients_crm. Identifiant unique du client utilisé en interne pour référencer chaque abonné.",
+    "score": 0.6585293797447848
+   }
+  ]
+ },
+ "marge réalisée sur les produits": {
+  "results": [
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "mrg",
+    "description": "Column mrg of table bronze.t_prd_03. Marge brute calculée entre le prix de vente et le prix d'achat.",
+    "score": 0.7103299270358554
+   },
+   {
+    "table_id": "01a16e8d-f5ce-7dd0-bc43-398697d81660",
+    "column_name": "mg_pct",
+    "description": "Column mg_pct of table bronze.prod_x1. Pourcentage de marge brute calculé sur le produit",
+    "score": 0.704690638603926
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "mg_pct",
+    "description": "Column mg_pct of table bronze.ref_produit_04. Pourcentage de marge brute calculé sur le produit.",
+    "score": 0.6953661933251735
+   },
+   {
+    "table_id": "01a16e8d-dd7a-7760-a247-dd86ea45ccce",
+    "column_name": "tx_mg",
+    "description": "Column tx_mg of table bronze.catalogue_05. Taux de marge appliqué au produit",
+    "score": 0.6915660478264896
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "tx_mg",
+    "description": "Column tx_mg of table bronze.art_02. Taux de marge appliqué au produit (ratio entre marge et prix de vente)",
+    "score": 0.690966838040971
+   },
+   {
+    "table_id": "01a16e8d-5578-7243-828e-fb19712f2d78",
+    "column_name": "tx_mg",
+    "description": "Column tx_mg of table bronze.hist_prix. Taux de marge brute de l'article",
+    "score": 0.6886321140277558
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "mrg",
+    "description": "Column mrg of table bronze.art_divers. Marge brute exprimée en proportion du prix de vente",
+    "score": 0.6819394082228465
+   },
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "mg_pct",
+    "description": "Column mg_pct of table bronze.articles_07. Marge brute exprimée en pourcentage sur le prix de vente.",
+    "score": 0.6680007377862855
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "pa",
+    "description": "Column pa of table bronze.t_prd_03. Prix d'achat du produit auprès du fournisseur.",
+    "score": 0.6364213634603948
+   },
+   {
+    "table_id": "01a16e8c-51c0-7050-bd23-d2119dd87d57",
+    "column_name": "mt_ht",
+    "description": "Column mt_ht of table bronze.ventes_lignes. Montant total hors taxes de la ligne (qte × pu_ht × (1‑remise))",
+    "score": 0.6341215939034481
+   }
+  ]
+ },
+ "prix payé au fournisseur": {
+  "results": [
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "pa",
+    "description": "Column pa of table bronze.t_prd_03. Prix d'achat du produit auprès du fournisseur.",
+    "score": 0.7827494662405333
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_divers. Prix d'achat du produit auprès du fournisseur",
+    "score": 0.7783759896826788
+   },
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.items_06. Prix d'achat du produit payé par l'entreprise au fournisseur.",
+    "score": 0.7596038700330658
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_02. Prix d'achat du produit auprès du fournisseur, hors taxes",
+    "score": 0.7464437207915541
+   },
+   {
+    "table_id": "01a16e8d-bf6d-7ca1-9de0-650263133701",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.prod_a. Prix d'achat du produit payé au fournisseur, exprimé en euros.",
+    "score": 0.7324277128753798
+   },
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "pa_ht",
+    "description": "Column pa_ht of table bronze.articles_07. Prix d'achat hors taxes du produit auprès du fournisseur.",
+    "score": 0.7306196471864249
+   },
+   {
+    "table_id": "01a16e8d-5578-7243-828e-fb19712f2d78",
+    "column_name": "pa",
+    "description": "Column pa of table bronze.hist_prix. Prix d'achat unitaire de l'article",
+    "score": 0.7284504822610659
+   },
+   {
+    "table_id": "01a16e8d-f5ce-7dd0-bc43-398697d81660",
+    "column_name": "pa_ht",
+    "description": "Column pa_ht of table bronze.prod_x1. Prix d'achat hors taxes payé au fournisseur",
+    "score": 0.7075434225901985
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "pa_ht",
+    "description": "Column pa_ht of table bronze.ref_produit_04. Prix d'achat hors taxe du produit pour l'entreprise.",
+    "score": 0.6903267318205384
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "pvt",
+    "description": "Column pvt of table bronze.ref_produit_04. Prix de vente toutes taxes comprises, visible par le consommateur.",
+    "score": 0.688720546808352
+   }
+  ]
+ },
+ "carte d'identité nationale": {
+  "results": [
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "n_ci",
+    "description": "Column n_ci of table bronze.rh_employes. Numéro de carte d'identité nationale de l'employé.",
+    "score": 0.6829896380299417
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "n_ci",
+    "description": "Column n_ci of table bronze.clients_crm. Numéro de carte d'identité nationale du client, séquence numérique à huit chiffres.",
+    "score": 0.660364388292631
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "id_frn",
+    "description": "Column id_frn of table bronze.art_divers. Identifiant du fournisseur",
+    "score": 0.5968542080248812
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "mat",
+    "description": "Column mat of table bronze.rh_employes. Identifiant interne unique attribué à chaque employé (matricule).",
+    "score": 0.581695968418113
+   },
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": "id_frn",
+    "description": "Column id_frn of table bronze.fournisseurs_fiches. Identifiant interne unique attribué à chaque fournisseur.",
+    "score": 0.5797858946813599
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "fid_id",
+    "description": "Column fid_id of table bronze.clients_fidelite. Identifiant unique attribué à chaque client dans le programme de fidélité.",
+    "score": 0.5796396231221869
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cli_id",
+    "description": "Column cli_id of table bronze.clients_crm. Identifiant unique du client utilisé en interne pour référencer chaque abonné.",
+    "score": 0.5789303983436839
+   },
+   {
+    "table_id": "01a16e8d-f5ce-7dd0-bc43-398697d81660",
+    "column_name": "art_id",
+    "description": "Column art_id of table bronze.prod_x1. Identifiant interne unique de l'article dans le système ERP",
+    "score": 0.5772392313649475
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "carte_msk",
+    "description": "Column carte_msk of table bronze.ventes_paiements. Numéro de carte bancaire masqué, affichant uniquement les premiers et derniers chiffres",
+    "score": 0.5745791717109606
+   },
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": "mf",
+    "description": "Column mf of table bronze.fournisseurs_fiches. Numéro de matricule fiscal du fournisseur (identifiant fiscal).",
+    "score": 0.5713851451874145
+   }
+  ]
+ },
+ "salaire des employés": {
+  "results": [
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "sal_b",
+    "description": "Column sal_b of table bronze.rh_employes. Salaire de base mensuel de l'employé.",
+    "score": 0.7205994795324479
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "rib",
+    "description": "Column rib of table bronze.rh_employes. Relevé d'Identité Bancaire utilisé pour le versement du salaire.",
+    "score": 0.6644831499765721
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": null,
+    "description": "Table bronze.rh_employes. Cette table recense les dossiers individuels de chaque employé travaillant dans les supermarchés de la chaîne. Chaque ligne représente un salarié avec son identifiant, ses coordonnées, son poste, le magasin d'affectation, le salaire de base et les informations bancaires nécessaires à la paie. Elle sert aux processus de gestion des ressources humaines, de la paie et du suivi administratif des effectifs. Sector: distribution de supermarchés. Domain: personnel de magasin. Tags: personnel_magasin, supermarché, paie, gestion_rh, caissier, vendeur, chef_rayon, magasin_01, magasin_08. Keywords: employés magasin, poste caissier, salaire, RIB, magasin, gestion du personnel. Columns: _fichier, _ingere_le, _mois, dt_emb, dt_fichier, mat, mg, n_ci, nm, pn, pst, rib, sal_b, tel.",
+    "score": 0.6555909895287465
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "nm",
+    "description": "Column nm of table bronze.rh_employes. Nom de famille de l'employé.",
+    "score": 0.6503937244415469
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "dt_emb",
+    "description": "Column dt_emb of table bronze.rh_employes. Date d'embauche de l'employé.",
+    "score": 0.6393995617388634
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "_fichier",
+    "description": "Column _fichier of table bronze.rh_employes. Chemin du fichier source contenant les données de l'employé.",
+    "score": 0.6311626434326352
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "n_ci",
+    "description": "Column n_ci of table bronze.rh_employes. Numéro de carte d'identité nationale de l'employé.",
+    "score": 0.6296130418777645
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "pn",
+    "description": "Column pn of table bronze.rh_employes. Prénom de l'employé.",
+    "score": 0.6268641352653681
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "_mois",
+    "description": "Column _mois of table bronze.rh_employes. Mois d'ingestion du fichier (format AAAA-MM).",
+    "score": 0.6220895952965502
+   },
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "mg",
+    "description": "Column mg of table bronze.rh_employes. Code du magasin d'affectation (ex. magasin_01).",
+    "score": 0.6211792745314743
+   }
+  ]
+ },
+ "coordonnées bancaires": {
+  "results": [
+   {
+    "table_id": "01a16e8d-7525-71e0-a175-28fa73930f97",
+    "column_name": "rib",
+    "description": "Column rib of table bronze.rh_employes. Relevé d'Identité Bancaire utilisé pour le versement du salaire.",
+    "score": 0.6633261052784716
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "auth",
+    "description": "Column auth of table bronze.ventes_paiements. Code d'autorisation de la transaction bancaire",
+    "score": 0.6187823727649797
+   },
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": "rib",
+    "description": "Column rib of table bronze.fournisseurs_fiches. Référence d’identification bancaire du fournisseur (RIB).",
+    "score": 0.6171299174842299
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_divers. Prix d'achat du produit auprès du fournisseur",
+    "score": 0.595088340022964
+   },
+   {
+    "table_id": "01a16e8b-fd9f-7e43-a68c-517431e637a8",
+    "column_name": "mode_paiement",
+    "description": "Column mode_paiement of table bronze.ventes_tickets. Mode de paiement utilisé (ESP, CB, CHQ, TR).",
+    "score": 0.5937716383422594
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "ean",
+    "description": "Column ean of table bronze.art_divers. Code-barres EAN du produit",
+    "score": 0.5883761818999753
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "mt",
+    "description": "Column mt of table bronze.ventes_paiements. Montant de la transaction en euros",
+    "score": 0.5881882274712322
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "mp",
+    "description": "Column mp of table bronze.ventes_paiements. Mode de paiement utilisé (ESP = espèces, CB = carte bancaire, TR = ticket restaurant)",
+    "score": 0.5851048871562314
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "id_frn",
+    "description": "Column id_frn of table bronze.art_divers. Identifiant du fournisseur",
+    "score": 0.5840322675821018
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "ean",
+    "description": "Column ean of table bronze.art_02. Code-barres EAN du produit, utilisé pour l'identification en point de vente",
+    "score": 0.583512494982795
+   }
+  ]
+ },
+ "avis des clients sur les produits": {
+  "results": [
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "lib",
+    "description": "Column lib of table bronze.articles_07. Libellé commercial du produit tel qu'affiché aux clients.",
+    "score": 0.6233768795992257
+   },
+   {
+    "table_id": "01a16e8d-8db8-7922-99c9-99b717846895",
+    "column_name": null,
+    "description": "Table bronze.avis_reseaux_sociaux. Cette table contient les avis publiés sur les réseaux sociaux concernant les magasins d'une chaîne de supermarchés en Tunisie. Chaque ligne représente un post individuel avec ses métadonnées (plateforme, auteur, date, localisation, magasin, texte, nombre de likes). Les données sont utilisées pour le suivi de la satisfaction client, l'analyse de sentiment et l'amélioration de l'expérience en magasin. Sector: supermarket retail. Domain: customer product reviews. Tags: avis_clients_reseaux_sociaux, plateforme_facebook, plateforme_instagram, plateforme_tiktok, secteur_supermarche, process_sentiment_analysis, magasin_identifier. Keywords: avis client, réseaux sociaux, commentaires magasin, sentiment client, promotion produit. Columns: _fichier, _ingere_le, _mois, dt_fichier, ligne_json.",
+    "score": 0.6134779263059927
+   },
+   {
+    "table_id": "01a16e8d-8db8-7922-99c9-99b717846895",
+    "column_name": "ligne_json",
+    "description": "Column ligne_json of table bronze.avis_reseaux_sociaux. Contient le JSON complet du post incluant l'identifiant du commentaire, la plateforme, l'auteur pseudonyme, la date, le lieu, le magasin, le texte de l'avis, le nombre de likes et la langue.",
+    "score": 0.6017685590593531
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "lib",
+    "description": "Column lib of table bronze.art_02. Libellé commercial du produit tel qu'affiché aux clients",
+    "score": 0.5991144773705279
+   },
+   {
+    "table_id": "01a16e8d-acfe-7412-b651-b2098ac97c47",
+    "column_name": null,
+    "description": "Table bronze.avis_emails. Cette table stocke les courriels reçus par le service client d’une chaîne de supermarchés tunisienne. Chaque ligne représente un email client avec son identifiant, son expéditeur, son sujet, son corps, ses pièces jointes éventuelles et les métadonnées d’ingestion. Elle permet de suivre les réclamations, demandes de remboursement, problèmes de fidélité et autres interactions afin d’améliorer le service client et la gestion des retours produits. Sector: distribution de supermarché. Domain: réclamations clients. Tags: supermarche_tunisie, reclamations_clients, produits_alimentaires, gestion_fidelite, emails_service_client, demande_remboursement, ticket_attachement. Keywords: réclamation client, demande remboursement, points fidélité, produit défectueux, email service client. Columns: _fichier, _ingere_le, _mois, dt_fichier, ligne_json.",
+    "score": 0.5983152328415448
+   },
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "tv",
+    "description": "Column tv of table bronze.articles_07. Taux de TVA appliqué au produit (19 %).",
+    "score": 0.5975949106450323
+   },
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": "dsg",
+    "description": "Column dsg of table bronze.items_06. Désignation commerciale du produit telle qu'affichée aux clients.",
+    "score": 0.5911862362845236
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "lib",
+    "description": "Column lib of table bronze.ref_produit_04. Libellé commercial du produit tel qu'affiché aux clients.",
+    "score": 0.590851275749695
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "lib",
+    "description": "Column lib of table bronze.t_prd_03. Libellé commercial du produit tel qu'affiché aux clients.",
+    "score": 0.588098806497503
+   },
+   {
+    "table_id": "01a16e8d-8db8-7922-99c9-99b717846895",
+    "column_name": "_mois",
+    "description": "Column _mois of table bronze.avis_reseaux_sociaux. Mois de référence du lot au format AAAA-MM.",
+    "score": 0.585189633237391
+   }
+  ]
+ },
+ "points de fidélité des clients": {
+  "results": [
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "pts",
+    "description": "Column pts of table bronze.clients_fidelite. Nombre de points accumulés par le client depuis son adhésion.",
+    "score": 0.7388904702341504
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": null,
+    "description": "Table bronze.clients_fidelite. Cette table conserve le registre détaillé des adhérents au programme de fidélité des magasins. Chaque ligne représente un client unique avec son niveau, ses points accumulés et les informations d’inscription. Elle sert à piloter les campagnes marketing, le suivi de la valeur client et la gestion des avantages liés aux statuts de fidélité. Sector: commerce de détail - programme de fidélité. Domain: fidélité clients. Tags: client_fidelite, programme_fidelite, niveau_argent, niveau_or, niveau_std, magasin_02, magasin_04, magasin_07, magasin_14, magasin_16. Keywords: programme fidélité, points client, niveau argent, magasin adhésion, historique client. Columns: _fichier, _ingere_le, _mois, dt_adh, dt_fichier, fid_id, mg_adh, niv, nom_prenom, pts, tel_cli.",
+    "score": 0.6937840033383424
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "fid_id",
+    "description": "Column fid_id of table bronze.clients_fidelite. Identifiant unique attribué à chaque client dans le programme de fidélité.",
+    "score": 0.6709101203897849
+   },
+   {
+    "table_id": "01a16e8c-51c0-7050-bd23-d2119dd87d57",
+    "column_name": "pt_fid",
+    "description": "Column pt_fid of table bronze.ventes_lignes. Identifiant du programme de fidélité ou du client (pseudonyme)",
+    "score": 0.6589831310207822
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "nom_prenom",
+    "description": "Column nom_prenom of table bronze.clients_fidelite. Nom complet du client, permettant de l’identifier personnellement.",
+    "score": 0.6546570279215889
+   },
+   {
+    "table_id": "01a16e8b-fd9f-7e43-a68c-517431e637a8",
+    "column_name": "cli",
+    "description": "Column cli of table bronze.ventes_tickets. Identifiant client (fidélité) associé à la transaction, lorsqu'il est disponible.",
+    "score": 0.6524617621165867
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "niv",
+    "description": "Column niv of table bronze.clients_fidelite. Niveau du programme de fidélité (ARGENT, OR, STD) indiquant le statut du client.",
+    "score": 0.6512845976227282
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "dt_adh",
+    "description": "Column dt_adh of table bronze.clients_fidelite. Date à laquelle le client a rejoint le programme de fidélité.",
+    "score": 0.6382318215345454
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "mg_adh",
+    "description": "Column mg_adh of table bronze.clients_fidelite. Code du magasin où le client a effectué son inscription.",
+    "score": 0.6314819141120036
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cli_id",
+    "description": "Column cli_id of table bronze.clients_crm. Identifiant unique du client utilisé en interne pour référencer chaque abonné.",
+    "score": 0.6242164593646103
+   }
+  ]
+ },
+ "produits d'hygiène et de beauté": {
+  "results": [
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": null,
+    "description": "Table bronze.t_prd_03. Ce tableau répertorie le catalogue maître des produits cosmétiques et d'hygiène, chaque ligne représentant une référence unique avec ses prix d'achat, prix de vente HT et TTC, le taux de TVA, le fournisseur et le conditionnement. Il sert aux équipes de pricing, d'approvisionnement et de gestion de catalogue pour calculer les marges, préparer les promotions et alimenter les systèmes de vente. Sector: cosmétiques et soins personnels - distribution. Domain: catalogue produits cosmétiques. Tags: produit_cosmetique, fournisseur_f0058, tva_19, tva_7, conditionnement_bte, prix_achat_confidential, marge_interne, catalogue_maitre, gestion_prix. Keywords: produits cosmétiques, tarifs vente, code barres, fournisseur, conditionnement, taux de TVA. Columns: _fichier, _ingere_le, _mois, cond_vte, dt_fichier, dt_maj, gencod, id_art, id_frn, lib, mrg, pa, pv_ht, pvt, tva, ut_v.",
+    "score": 0.6116949172393976
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "tva",
+    "description": "Column tva of table bronze.t_prd_03. Taux de TVA applicable au produit (7 % ou 19 %).",
+    "score": 0.6011307659798151
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": null,
+    "description": "Table bronze.ref_produit_04. Cette table répertorie le catalogue de références produits d'entretien et d'hygiène, chaque ligne correspondant à une variante d'article identifiée par art_id. Elle inclut les libellés, les prix d'achat, de vente, les marges, les codes fournisseurs et les unités de conditionnement afin de soutenir la tarification, les achats et la diffusion du catalogue. Les métadonnées d'ingestion permettent le suivi de la provenance et de la mise à jour des données. Sector: distribution de produits d'entretien ménager. Domain: référentiel produit. Tags: produit_entretien_menager, fournisseur_f0073, unite_vente_u, condition_vente_kg, prix_public, catalogue_reference, marge_confidentielle. Keywords: produit nettoyage, prix de vente, code fournisseur, unité de vente, condition de vente. Columns: _fichier, _ingere_le, _mois, art_id, cd_frn, cond_vte, dt_fichier, dt_maj, lib, mg_pct, pa_ht, pvt, px_vte, tv, ut_v.",
+    "score": 0.5976082442765392
+   },
+   {
+    "table_id": "01a16e8d-f5ce-7dd0-bc43-398697d81660",
+    "column_name": "pv_ht",
+    "description": "Column pv_ht of table bronze.prod_x1. Prix de vente hors taxes affiché aux clients",
+    "score": 0.59169788756478
+   },
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "lib",
+    "description": "Column lib of table bronze.articles_07. Libellé commercial du produit tel qu'affiché aux clients.",
+    "score": 0.5872646920242732
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "pvt",
+    "description": "Column pvt of table bronze.t_prd_03. Prix de vente toutes taxes comprises.",
+    "score": 0.58666922092393
+   },
+   {
+    "table_id": "01a16e8d-dd7a-7760-a247-dd86ea45ccce",
+    "column_name": "cond_vte",
+    "description": "Column cond_vte of table bronze.catalogue_05. Condition de vente ou unité de conditionnement du produit",
+    "score": 0.586575069402943
+   },
+   {
+    "table_id": "01a16e8d-f5ce-7dd0-bc43-398697d81660",
+    "column_name": "pa_ht",
+    "description": "Column pa_ht of table bronze.prod_x1. Prix d'achat hors taxes payé au fournisseur",
+    "score": 0.5864622902139646
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "px_vte",
+    "description": "Column px_vte of table bronze.ref_produit_04. Prix de vente hors taxe proposé aux clients.",
+    "score": 0.5854731449202819
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "pv_ht",
+    "description": "Column pv_ht of table bronze.t_prd_03. Prix de vente hors taxes proposé au client.",
+    "score": 0.5852242911396887
+   }
+  ]
+ },
+ "vêtements pour enfants": {
+  "results": [
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": null,
+    "description": "Table bronze.items_06. Cette table contient le référentiel maître des articles de prêt‑à‑porter destinés aux enfants, avec leurs caractéristiques commerciales et logistiques. Elle sert les équipes d'achat, de merchandising et de gestion des stocks pour assurer la disponibilité et la tarification des produits en magasin et en ligne. Sector: distribution de vêtements pour enfants. Domain: catalogue produit. Tags: produit_vetement_enfant, fournisseur_f0098, condition_vente_pce, unite_piece, prix_achat, prix_vente, catalogue_items. Keywords: vêtements enfants, catalogue article, prix d'achat, code ean, fournisseur. Columns: _fichier, _ingere_le, _mois, cd_art, cd_frn, cond_vte, dsg, dt_fichier, dt_maj, gencod, pvh, pvt, px_ach, tv, unt.",
+    "score": 0.5902961765660986
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "lib",
+    "description": "Column lib of table bronze.art_02. Libellé commercial du produit tel qu'affiché aux clients",
+    "score": 0.5447706364437863
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "tv",
+    "description": "Column tv of table bronze.ref_produit_04. Taux de TVA appliqué au produit (valeur fixe 19%).",
+    "score": 0.5410446539077213
+   },
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": "tv",
+    "description": "Column tv of table bronze.items_06. Taux de TVA appliqué au produit (ex. 19%).",
+    "score": 0.5381692556931975
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "tva",
+    "description": "Column tva of table bronze.t_prd_03. Taux de TVA applicable au produit (7 % ou 19 %).",
+    "score": 0.5373649116727351
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_divers. Prix d'achat du produit auprès du fournisseur",
+    "score": 0.5368411045330884
+   },
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": "pvt",
+    "description": "Column pvt of table bronze.items_06. Prix de vente toutes taxes comprises affiché aux clients.",
+    "score": 0.5362047393262234
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "px_ttc",
+    "description": "Column px_ttc of table bronze.art_02. Prix de vente toutes taxes comprises du produit",
+    "score": 0.5359792623569949
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_02. Prix d'achat du produit auprès du fournisseur, hors taxes",
+    "score": 0.5354211630883086
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "px_vte",
+    "description": "Column px_vte of table bronze.art_02. Prix de vente conseillé du produit hors taxes",
+    "score": 0.5329851468820151
+   }
+  ]
+ },
+ "remises promotionnelles": {
+  "results": [
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "tx_rem",
+    "description": "Column tx_rem of table bronze.promos. Pourcentage de remise appliqué à l'article pendant la promotion.",
+    "score": 0.7325908305916252
+   },
+   {
+    "table_id": "01a16e8c-51c0-7050-bd23-d2119dd87d57",
+    "column_name": "rem",
+    "description": "Column rem of table bronze.ventes_lignes. Remise en pourcentage appliquée à la ligne",
+    "score": 0.7035612685388238
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": null,
+    "description": "Table bronze.promos. Cette table enregistre chaque promotion appliquée aux articles (art) avec ses dates de début (dt_deb) et de fin (dt_fin), le taux de remise (tx_rem), le type de promotion (typ_pr) et un identifiant unique (id_pr). Elle sert les équipes marketing et pricing à planifier, suivre et analyser les campagnes promotionnelles au niveau national (mg=TOUS). Sector: retail grocery - promotions. Domain: promotion catalogue. Tags: grocery_promotion, ramadan_promo, aleatoire_promo, discount_rate, promotion_schedule, article_promo. Keywords: promotion ramadan, discount rate, promotion period, promotion id, article promotion. Columns: _fichier, _ingere_le, _mois, art, dt_deb, dt_fichier, dt_fin, id_pr, mg, tx_rem, typ_pr.",
+    "score": 0.6532961774005301
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "dt_fin",
+    "description": "Column dt_fin of table bronze.promos. Date de fin de la période promotionnelle.",
+    "score": 0.647641269356676
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "mg",
+    "description": "Column mg of table bronze.promos. Segment de marché ciblé par la promotion (ex. TOUS = tous les magasins).",
+    "score": 0.6464120185830847
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "art",
+    "description": "Column art of table bronze.promos. Code interne de l'article concerné par la promotion.",
+    "score": 0.6410334110260738
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "dt_deb",
+    "description": "Column dt_deb of table bronze.promos. Date de début de la période promotionnelle.",
+    "score": 0.6382041840066652
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "_fichier",
+    "description": "Column _fichier of table bronze.promos. Chemin du fichier source contenant les données de promotion.",
+    "score": 0.6381467847474316
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "id_pr",
+    "description": "Column id_pr of table bronze.promos. Identifiant unique de la promotion.",
+    "score": 0.6372767143351037
+   },
+   {
+    "table_id": "01a16e8d-5ce6-7191-8c6f-19053d92930f",
+    "column_name": "typ_pr",
+    "description": "Column typ_pr of table bronze.promos. Catégorie de promotion (ex. RAMADAN, ALEATOIRE).",
+    "score": 0.6290348152948306
+   }
+  ]
+ },
+ "mode de paiement des achats": {
+  "results": [
+   {
+    "table_id": "01a16e8b-fd9f-7e43-a68c-517431e637a8",
+    "column_name": "mode_paiement",
+    "description": "Column mode_paiement of table bronze.ventes_tickets. Mode de paiement utilisé (ESP, CB, CHQ, TR).",
+    "score": 0.6892277702930945
+   },
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.items_06. Prix d'achat du produit payé par l'entreprise au fournisseur.",
+    "score": 0.6663829089225857
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "mp",
+    "description": "Column mp of table bronze.ventes_paiements. Mode de paiement utilisé (ESP = espèces, CB = carte bancaire, TR = ticket restaurant)",
+    "score": 0.6607597693611166
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_divers. Prix d'achat du produit auprès du fournisseur",
+    "score": 0.651711588485865
+   },
+   {
+    "table_id": "01a16e8d-bf6d-7ca1-9de0-650263133701",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.prod_a. Prix d'achat du produit payé au fournisseur, exprimé en euros.",
+    "score": 0.6472320099602088
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "pa",
+    "description": "Column pa of table bronze.t_prd_03. Prix d'achat du produit auprès du fournisseur.",
+    "score": 0.6403483628188494
+   },
+   {
+    "table_id": "01a16e8d-c70c-7712-80f2-822a859a73d1",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_02. Prix d'achat du produit auprès du fournisseur, hors taxes",
+    "score": 0.6388123615422546
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "mt",
+    "description": "Column mt of table bronze.ventes_paiements. Montant de la transaction en euros",
+    "score": 0.6331850826476083
+   },
+   {
+    "table_id": "01a16e8c-a4ed-7740-a2ba-42ff086ca563",
+    "column_name": "magasin_id",
+    "description": "Column magasin_id of table bronze.ventes_paiements. Identifiant du magasin où la transaction a eu lieu",
+    "score": 0.6294374532513505
+   },
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "pa_ht",
+    "description": "Column pa_ht of table bronze.articles_07. Prix d'achat hors taxes du produit auprès du fournisseur.",
+    "score": 0.620202962738033
+   }
+  ]
+ },
+ "date de naissance des clients": {
+  "results": [
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "dn",
+    "description": "Column dn of table bronze.clients_crm. Date de naissance du client, format ISO ou jour/mois/année.",
+    "score": 0.7761639481373261
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "nom_prenom",
+    "description": "Column nom_prenom of table bronze.clients_fidelite. Nom complet du client, permettant de l’identifier personnellement.",
+    "score": 0.6996727497263704
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "dt_crea",
+    "description": "Column dt_crea of table bronze.clients_crm. Date de création de l’enregistrement client dans le système CRM.",
+    "score": 0.698092901479353
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "n_ci",
+    "description": "Column n_ci of table bronze.clients_crm. Numéro de carte d'identité nationale du client, séquence numérique à huit chiffres.",
+    "score": 0.6869342531840283
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "c_pn",
+    "description": "Column c_pn of table bronze.clients_crm. Prénom du client, par exemple Rania ou Ahmed.",
+    "score": 0.6810622798446838
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cli_id",
+    "description": "Column cli_id of table bronze.clients_crm. Identifiant unique du client utilisé en interne pour référencer chaque abonné.",
+    "score": 0.6795689104702995
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "_mois",
+    "description": "Column _mois of table bronze.clients_crm. Mois d’ingestion au format AAAA‑MM.",
+    "score": 0.6746550001306859
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "em",
+    "description": "Column em of table bronze.clients_crm. Adresse électronique du client, par exemple rania.souissi@gmail.com.",
+    "score": 0.6740901094943803
+   },
+   {
+    "table_id": "01a16e8d-05a3-7652-91d1-1c2a41d2be15",
+    "column_name": "dt_adh",
+    "description": "Column dt_adh of table bronze.clients_fidelite. Date à laquelle le client a rejoint le programme de fidélité.",
+    "score": 0.6731509938549798
+   },
+   {
+    "table_id": "01a16e8c-f89d-75e2-aace-4423f9a7115f",
+    "column_name": "cp",
+    "description": "Column cp of table bronze.clients_crm. Code postal de l’adresse du client, par exemple 1000 ou 2040.",
+    "score": 0.6699873802077206
+   }
+  ]
+ },
+ "délai de livraison des fournisseurs": {
+  "results": [
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": "delai_j",
+    "description": "Column delai_j of table bronze.fournisseurs_fiches. Délai moyen de livraison du fournisseur exprimé en jours.",
+    "score": 0.7506123260211447
+   },
+   {
+    "table_id": "01a16e8d-655b-7990-bdb2-7e69d5324626",
+    "column_name": null,
+    "description": "Table bronze.fournisseurs_fiches. Cette table contient les fiches maîtres des fournisseurs, avec leurs identifiants fiscaux, coordonnées, ville, délai de livraison et références bancaires. Chaque ligne représente un fournisseur unique tel qu'il apparaît dans les fichiers mensuels d'import. Elle sert à alimenter les processus d'approvisionnement, de paiement et de suivi logistique. Sector: Industrie de biens de consommation – fournisseurs de produits manufacturés. Domain: fiches fournisseurs. Tags: fournisseurs_industriels, industries_laitieres, electromenager, cosmetiques, embouteillage, agroalimentaire, gestion_approvisionnement, paiement_fournisseur, delai_livraison. Keywords: fournisseur industriel, délai de livraison, coordonnées bancaires, RIB fournisseur, contact fournisseur. Columns: _fichier, _ingere_le, _mois, delai_j, dt_fichier, em, id_frn, mf, rib, rs, tel, vil.",
+    "score": 0.6796296632400404
+   },
+   {
+    "table_id": "01a16e8d-f5ce-7dd0-bc43-398697d81660",
+    "column_name": "cd_frn",
+    "description": "Column cd_frn of table bronze.prod_x1. Code interne du fournisseur associé à l'article",
+    "score": 0.6252249479294001
+   },
+   {
+    "table_id": "01a16e8d-e71a-7a41-b9e6-d0f5c4a7fe08",
+    "column_name": "cd_frn",
+    "description": "Column cd_frn of table bronze.items_06. Code interne du fournisseur qui fournit l'article.",
+    "score": 0.6215016552205908
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "px_ach",
+    "description": "Column px_ach of table bronze.art_divers. Prix d'achat du produit auprès du fournisseur",
+    "score": 0.6190989556613707
+   },
+   {
+    "table_id": "01a16e8d-ee21-7470-a5bd-a5e4cb9f8931",
+    "column_name": "id_frn",
+    "description": "Column id_frn of table bronze.articles_07. Code interne du fournisseur qui fournit le produit.",
+    "score": 0.6181492382946399
+   },
+   {
+    "table_id": "01a16e8d-cea0-7aa0-9743-e27aba1bacc5",
+    "column_name": "pa",
+    "description": "Column pa of table bronze.t_prd_03. Prix d'achat du produit auprès du fournisseur.",
+    "score": 0.6180504279016428
+   },
+   {
+    "table_id": "01a16e8d-fe90-7743-9d39-f9654a2015c2",
+    "column_name": "id_frn",
+    "description": "Column id_frn of table bronze.art_divers. Identifiant du fournisseur",
+    "score": 0.6155789540944252
+   },
+   {
+    "table_id": "01a16e8d-d621-7212-8fb5-531f987a13fb",
+    "column_name": "cd_frn",
+    "description": "Column cd_frn of table bronze.ref_produit_04. Code interne du fournisseur associé à l'article.",
+    "score": 0.6152860109593496
+   },
+   {
+    "table_id": "01a16e8d-bf6d-7ca1-9de0-650263133701",
+    "column_name": "id_frn",
+    "description": "Column id_frn of table bronze.prod_a. Code interne du fournisseur associé au produit.",
+    "score": 0.61236463637774
+   }
+  ]
+ }
+}
